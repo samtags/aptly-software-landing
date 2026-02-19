@@ -4,7 +4,6 @@ description = "Owns backlog structure and task definition. Prepares sprint-ready
 model = "gpt-5.2-codex"
 model_reasoning_effort = "high"
 
-approval_policy = "on-request"
 sandbox_mode = "workspace-write"
 
 system_prompt = """

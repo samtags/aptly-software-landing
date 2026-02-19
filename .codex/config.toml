@@ -13,8 +13,8 @@ model_reasoning_effort = "medium"
 
 # Safety / execution defaults
 
-approval_policy = "on-request"
 sandbox_mode = "workspace-write"
+approval_policy = "never"
 
 # Help Codex find the project root reliably
 
@@ -51,3 +51,9 @@ config_file = "agents/qa.toml"
 [agents.stakeholder]
 description = "Reviews completed sprint output and provides structured, objective-aligned feedback."
 config_file = "agents/stakeholder.toml"
+
+
+[mcp_servers.playwright]
+command = "npx"
+args = ["@playwright/mcp@latest", "--extension"]
+env = { "PLAYWRIGHT_MCP_EXTENSION_TOKEN" = "0bl_tEuYXSuQPw6MhiBSgudi3ZllIZ50huX1CaD_vFU" }

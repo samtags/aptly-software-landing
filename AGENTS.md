@@ -82,6 +82,17 @@ This project follows a structured Scrum-based operating model designed for LLM a
 
 ---
 
+## Status Labels
+
+Use the following status labels for all sprint and task documents:
+
+- `To Do`
+- `In Progress - Dev`
+- `In Progress - QA`
+- `In Review`
+- `Verified`
+- `Done`
+
 ## 1. Product Decomposition (Preparation Phase)
 
 **Owner:** Project Manager  
@@ -124,6 +135,13 @@ Tasks lacking clear acceptance criteria are returned to the Project Manager.
 
 ---
 
+## Scrum Master Ongoing Responsibilities
+
+- Periodically check for sprint blockers (e.g., QA failures, missing assets, stalled tasks).
+- Ensure QA and Frontend are working on the current sprint tasks and that task statuses stay in sync across `sprint/Sprint #N/Sprint Backlog.md` and `project/docs/task-XXXX.md`.
+- Enforce status consistency: Sprint Backlog row, task doc status, and any QA update note must match within 10 minutes of any status change.
+- If inactive for 30 seconds, the agent should be stopped and respawned only if needed.
+
 ## 3. Sprint Planning
 
 **Owner:** Scrum Master  
@@ -150,10 +168,18 @@ Only tasks in `Sprint Backlog.md` may be worked on during the sprint.
 
 ### Frontend Developer
 
-- Creates a branch per task.
 - Implements in Next.js 16 (JavaScript only).
 - Ensures responsiveness and interaction accuracy.
 - Marks task as `In Review` when complete.
+- Updates task status in both `sprint/Sprint #N/Sprint Backlog.md` and `project/docs/task-XXXX.md` when status changes (e.g., `In Progress` → `In Review`).
+- When QA raises an issue on a task, immediately switch to fix that task to unblock QA. After resolving and re-verifying, return to the next task in the Sprint Backlog.
+- If the frontend switches away from an active task, the previous task must revert to `To Do` unless it is in QA; only one task may be `In Progress - Dev` at a time.
+- The frontend continues through the Sprint Backlog sequentially until all sprint items are `Done` or `Verified`; do not stop after a single task.
+- Proceeds autonomously through the Sprint Backlog without requesting user input.
+- App source lives in `src/` (e.g., `src/app`), so all code changes and paths should target `src/`.
+- Use Playwright MCP to verify output against reference PDFs in `./screenshots` before marking `In Review`.
+- Use Playwright’s bundled Chromium via Playwright MCP (do not use system Chrome or any external browser).
+- If inactive for 30 seconds, the agent should be stopped and respawned only if needed.
 
 ### QA
 
@@ -164,8 +190,13 @@ Only tasks in `Sprint Backlog.md` may be worked on during the sprint.
   - Interaction states
   - Console errors
 - Marks task:
-  - `Done` (if passed)
+  - `Verified` (if passed)
   - Returns to `In Progress` with defect report (if failed)
+- Updates task status in both `sprint/Sprint #N/Sprint Backlog.md` and `project/docs/task-XXXX.md` when status changes (e.g., `In Review` → `Verified` or `In Progress`).
+- Begins verification automatically when tasks are marked `In Review`, without requesting user input.
+- Use Playwright MCP to verify output against reference PDFs in `./screenshots`.
+- Use Playwright’s bundled Chromium via Playwright MCP (do not use system Chrome or any external browser).
+- If inactive for 30 seconds, the agent should be stopped and respawned only if needed.
 
 Work is not complete until QA approves.
 
@@ -347,19 +378,7 @@ This workflow defines how implementation moves from backlog to production-ready 
 
 ---
 
-## 2. Branching Strategy
-
-- Create one branch per task.
-- Naming convention:
-  feature/task-0001-hero-section
-  fix/task-0007-responsive-padding
-  refactor/task-0012-layout-structure
-
-- Never commit directly to `main`.
-
----
-
-## 3. Implementation
+## 2. Implementation
 
 **Tech Stack:** Next.js 16 (JavaScript only)
 
@@ -387,6 +406,7 @@ Before handing off:
   - Desktop (1024px+)
 - Check hover/focus states and interactions.
 - Ensure no layout shifts or broken assets.
+- Run the dev server and verify the rendered UI (do not mark `In Review` without a running dev server check).
 
 Update task status to `In Review`.
 
@@ -409,7 +429,7 @@ Frontend applies fixes and resubmits for validation.
 Once QA marks the task as `Done`:
 
 - Squash or clean commits if necessary.
-- Merge branch into `main`.
+- Merge into `main`.
 - Update task status in:
   - `project/docs/task-XXXX.md`
   - `project/Backlog.md`
@@ -420,7 +440,12 @@ Only completed, QA-approved tasks may reach `main`.
 
 # Rules
 
-- One task per branch.
-- One branch per PR.
 - No scope creep inside a task.
 - "Done" means QA-approved and merged.
+- Status labels for in-progress work must be:
+  - In Progress - Dev
+  - In Progress - QA
+- If QA raises an issue, the task must immediately switch to In Progress - Dev.
+- Only one task may be In Progress - Dev at any time.
+- QA files, output, and artifacts must be stored in `./artifacts/qa/`.
+- Frontend files, output, and artifacts must be stored in `./artifacts/frontend/`.

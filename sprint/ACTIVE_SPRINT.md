@@ -11,7 +11,7 @@ Active
 
 ## Sprint Objective
 
-Recreate Hero section and global layout structure.
+Establish the global layout foundation and fully implement the header and hero sections (including social proof and floating testimonial cards).
 
 ## Sprint Backlog Source
 
@@ -27,7 +27,7 @@ Only tasks listed in the Sprint Backlog may be implemented.
 
 ## Approved By
 
-<Your Name>
+User
 
 ## Notes
 
