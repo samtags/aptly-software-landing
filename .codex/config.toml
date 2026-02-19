@@ -1,0 +1,53 @@
+################################################################################
+
+# Project-scoped Codex configuration
+
+# Loaded when the repo is trusted and a project root is detected.
+
+################################################################################
+
+# Model selection (safe defaults; adjust if you have preferred Codex models)
+
+model = "gpt-5.2-codex"
+model_reasoning_effort = "medium"
+
+# Safety / execution defaults
+
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+
+# Help Codex find the project root reliably
+
+project_root_markers = [".git", ".codex", "package.json"]
+
+# Optional: if AGENTS.md is missing, try these
+
+project_doc_fallback_filenames = ["AGENTS.md", ".codex/AGENTS.md"]
+
+[features]
+multi_agent = true
+
+# Limit concurrent agent threads (keeps things manageable)
+
+[agents]
+max_threads = 5
+
+[agents.scrum_master]
+description = "Controls sprint lifecycle, enforces scope discipline, and manages Scrum ceremonies."
+config_file = "agents/scrum_master.toml"
+
+[agents.project_manager]
+description = "Owns backlog structure and task definition. Prepares sprint-ready work."
+config_file = "agents/project_manager.toml"
+
+[agents.frontend_developer]
+description = "Implements tasks selected for the active sprint in Next.js 16 (JavaScript), following sprint scope strictly."
+config_file = "agents/frontend_developer.toml"
+
+[agents.qa]
+description = "Validates sprint-approved tasks strictly against acceptance criteria."
+config_file = "agents/qa.toml"
+
+[agents.stakeholder]
+description = "Reviews completed sprint output and provides structured, objective-aligned feedback."
+config_file = "agents/stakeholder.toml"
