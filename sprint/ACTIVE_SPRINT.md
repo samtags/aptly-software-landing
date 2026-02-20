@@ -2,20 +2,20 @@
 
 ## Sprint Number
 
-Sprint #1
+Sprint #2
 
 ## Status
 
-Active
+Completed
 (Possible values: Proposed | Active | Completed | Blocked)
 
 ## Sprint Objective
 
-Establish the global layout foundation and fully implement the header and hero sections (including social proof and floating testimonial cards).
+Apply stakeholder feedback to align hero background styling and testimonial card presentation with the updated reference expectations.
 
 ## Sprint Backlog Source
 
-sprint/Sprint #1/Sprint Backlog.md
+sprint/Sprint #2/Sprint Backlog.md
 
 ## Scope Lock
 
@@ -23,7 +23,7 @@ Only tasks listed in the Sprint Backlog may be implemented.
 
 ## Started At
 
-2026-02-19
+2026-02-20
 
 ## Approved By
 

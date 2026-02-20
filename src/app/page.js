@@ -1,4 +1,25 @@
 const navLinks = ["About", "Company", "Pricing", "Contact", "Projects", "Jobs"];
+const trustedLogos = ["Lumo", "Acme Corp", "Quantum", "Apex", "Vela"];
+const impactStats = [
+  {
+    value: "1,200+",
+    label: "Successful Projects Delivered",
+    description:
+      "From startups to enterprises, we’ve built high-performing websites and digital experiences that drive real results.",
+  },
+  {
+    value: "5K+",
+    label: "Ad Campaigns Optimized",
+    description:
+      "We’ve helped brands boost acquisition costs and hit ROI with data-driven paid media strategies.",
+  },
+  {
+    value: "$10M+",
+    label: "Revenue Generated for Clients",
+    description:
+      "Our strategic design, marketing, and conversion optimization have helped businesses scale and maximize profits.",
+  },
+];
 
 export default function Home() {
   return (
@@ -95,6 +116,83 @@ export default function Home() {
               </p>
               <span className="card-author">— Sarah Mitchel</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="portfolio page-section">
+        <div className="container">
+          <div className="portfolio-grid">
+            <article className="portfolio-card">
+              <div className="portfolio-media portfolio-media-cloudash" aria-hidden="true" />
+              <div className="portfolio-footer">
+                <div>
+                  <h3 className="portfolio-title">Cloudash</h3>
+                  <p className="portfolio-category">Web design • development</p>
+                </div>
+                <span className="portfolio-metric">2x Increase in conversion</span>
+              </div>
+            </article>
+
+            <article className="portfolio-card">
+              <div className="portfolio-media portfolio-media-nova" aria-hidden="true" />
+              <div className="portfolio-footer">
+                <div>
+                  <h3 className="portfolio-title">Nova Threads</h3>
+                  <p className="portfolio-category">Web design • development</p>
+                </div>
+                <span className="portfolio-metric">4x Ad performance</span>
+              </div>
+            </article>
+
+            <article className="portfolio-card">
+              <div className="portfolio-media portfolio-media-orbit" aria-hidden="true" />
+              <div className="portfolio-footer">
+                <div>
+                  <h3 className="portfolio-title">OrbitCloud</h3>
+                  <p className="portfolio-category">Web design • development</p>
+                </div>
+                <span className="portfolio-metric">+80% Customer sign-ups</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="trusted-by">
+        <div className="container">
+          <p className="trusted-label">TRUSTED BY TOP COMPANIES</p>
+          <div className="trusted-logos" aria-label="Trusted by logos">
+            {trustedLogos.map((logo) => (
+              <span key={logo} className="trusted-logo">
+                {logo}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="impact">
+        <div className="container">
+          <div className="impact-header">
+            <div className="impact-label">
+              <span className="impact-bracket" aria-hidden="true" />
+              <span>Impact</span>
+            </div>
+            <h2 className="impact-title">
+              Bravio simplifies the process,
+              <br />
+              and delivers results.
+            </h2>
+          </div>
+          <div className="impact-grid">
+            {impactStats.map((stat) => (
+              <article key={stat.label} className="impact-card">
+                <p className="impact-value">{stat.value}</p>
+                <h3 className="impact-card-title">{stat.label}</h3>
+                <p className="impact-card-copy">{stat.description}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
