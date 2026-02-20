@@ -155,6 +155,39 @@ export default function Home() {
                 <span className="portfolio-metric">+80% Customer sign-ups</span>
               </div>
             </article>
+
+            <article className="portfolio-card">
+              <div className="portfolio-media portfolio-media-asterisk" aria-hidden="true" />
+              <div className="portfolio-footer">
+                <div>
+                  <h3 className="portfolio-title">Asterisk inc</h3>
+                  <p className="portfolio-category">Web design • development</p>
+                </div>
+                <span className="portfolio-metric">4x Increase in conversion</span>
+              </div>
+            </article>
+
+            <article className="portfolio-card">
+              <div className="portfolio-media portfolio-media-vertax" aria-hidden="true" />
+              <div className="portfolio-footer">
+                <div>
+                  <h3 className="portfolio-title">Vertax Labs</h3>
+                  <p className="portfolio-category">Web design • development</p>
+                </div>
+                <span className="portfolio-metric">120% Boost in leads</span>
+              </div>
+            </article>
+
+            <article className="portfolio-card">
+              <div className="portfolio-media portfolio-media-celest" aria-hidden="true" />
+              <div className="portfolio-footer">
+                <div>
+                  <h3 className="portfolio-title">Celestia</h3>
+                  <p className="portfolio-category">Web design • development</p>
+                </div>
+                <span className="portfolio-metric">3x Brand awareness</span>
+              </div>
+            </article>
           </div>
         </div>
       </section>

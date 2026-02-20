@@ -2,20 +2,20 @@
 
 ## Sprint Number
 
-Sprint #2
+Sprint #3
 
 ## Status
 
-Completed
+Active
 (Possible values: Proposed | Active | Completed | Blocked)
 
 ## Sprint Objective
 
-Apply stakeholder feedback to align hero background styling and testimonial card presentation with the updated reference expectations.
+Address feedback on Hero, Portfolio, Partner Companies, and Impact stats to align with the latest reference imagery.
 
 ## Sprint Backlog Source
 
-sprint/Sprint #2/Sprint Backlog.md
+sprint/Sprint #3/Sprint Backlog.md
 
 ## Scope Lock
 

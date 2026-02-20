@@ -247,9 +247,24 @@ main {
   position: absolute;
   inset: -40px 0 auto 0;
   height: 640px;
-  background-image: radial-gradient(rgba(162, 167, 174, 0.7) 0.8px, transparent 0.8px);
+  background-image: radial-gradient(
+    rgba(162, 167, 174, 0.15) 0.9px,
+    transparent 0.9px
+  );
   background-size: 20px 20px;
-  opacity: 0.4;
+  opacity: 1;
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    #000 0%,
+    #000 45%,
+    transparent 75%
+  );
+  mask-image: radial-gradient(
+    ellipse at center,
+    #000 0%,
+    #000 45%,
+    transparent 75%
+  );
   pointer-events: none;
   z-index: 0;
 }
@@ -316,7 +331,7 @@ main {
 
 .hero-title {
   font-family: var(--font-display), var(--font-sans), sans-serif;
-  font-size: clamp(1.6rem, 6.6vw, 2.1rem);
+  font-size: 48px;
   line-height: 1.12;
   margin: 0;
   color: #1a1a1a;
@@ -486,17 +501,49 @@ main {
   display: none;
 }
 
+.portfolio {
+  position: relative;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 6%,
+    rgba(0, 0, 0, 1) 94%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 6%,
+    rgba(0, 0, 0, 1) 94%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.portfolio::before,
+.portfolio::after {
+  content: none;
+}
+
+.portfolio .container {
+  position: relative;
+  z-index: 1;
+  padding-right: 0 !important;
+}
+
 .portfolio-grid {
-  display: grid;
-  gap: 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 18px;
+  overflow: visible;
 }
 
 .portfolio-card {
   background: #ffffff;
   border: 1px solid #eceff3;
-  border-radius: 22px;
+  border-radius: 24px;
   box-shadow: 0 18px 36px rgba(15, 17, 20, 0.06);
-  padding: 14px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -504,20 +551,56 @@ main {
 
 .portfolio-media {
   border-radius: 18px;
-  height: 200px;
+  height: 240px;
   background: #f3f4f7;
 }
 
 .portfolio-media-cloudash {
-  background: linear-gradient(135deg, rgba(173, 221, 255, 0.6), rgba(255, 186, 215, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(173, 221, 255, 0.6),
+    rgba(255, 186, 215, 0.6)
+  );
 }
 
 .portfolio-media-nova {
-  background: linear-gradient(135deg, rgba(196, 199, 205, 0.7), rgba(235, 237, 241, 0.7));
+  background: linear-gradient(
+    135deg,
+    rgba(196, 199, 205, 0.7),
+    rgba(235, 237, 241, 0.7)
+  );
 }
 
 .portfolio-media-orbit {
-  background: linear-gradient(135deg, rgba(72, 147, 255, 0.65), rgba(255, 120, 175, 0.65));
+  background: linear-gradient(
+    135deg,
+    rgba(72, 147, 255, 0.65),
+    rgba(255, 120, 175, 0.65)
+  );
+}
+
+.portfolio-media-asterisk {
+  background: linear-gradient(
+    135deg,
+    rgba(215, 217, 223, 0.9),
+    rgba(240, 241, 244, 0.9)
+  );
+}
+
+.portfolio-media-vertax {
+  background: linear-gradient(
+    135deg,
+    rgba(224, 227, 214, 0.85),
+    rgba(248, 248, 242, 0.85)
+  );
+}
+
+.portfolio-media-celest {
+  background: linear-gradient(
+    135deg,
+    rgba(186, 208, 255, 0.85),
+    rgba(232, 236, 255, 0.85)
+  );
 }
 
 .portfolio-footer {
@@ -547,6 +630,32 @@ main {
 
 .trusted-by {
   padding: var(--space-6) 0 var(--space-7);
+  position: relative;
+}
+
+.trusted-by::before,
+.trusted-by::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.trusted-by::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.trusted-by::after {
+  right: 0;
+  background: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .trusted-label {
@@ -556,6 +665,8 @@ main {
   font-size: var(--text-xs);
   color: var(--color-muted);
   margin: 0 0 var(--space-4);
+  position: relative;
+  z-index: 1;
 }
 
 .trusted-logos {
@@ -563,6 +674,8 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 18px 32px;
+  position: relative;
+  z-index: 1;
 }
 
 .trusted-logo {
@@ -601,8 +714,8 @@ main {
 
 .impact-title {
   margin: var(--space-4) 0 0;
-  font-size: clamp(1.6rem, 2.6vw + 1rem, 2.4rem);
-  line-height: 1.2;
+  font-size: 40px;
+  line-height: 1.12;
   color: #1f1b16;
 }
 
@@ -622,20 +735,21 @@ main {
 
 .impact-value {
   margin: 0 0 8px;
-  font-size: 1.3rem;
+  font-size: 48px;
   font-weight: 700;
   color: #1f1b16;
 }
 
 .impact-card-title {
   margin: 0 0 8px;
-  font-size: 0.9rem;
-  color: #1f1b16;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6b7385;
 }
 
 .impact-card-copy {
   margin: 0;
-  font-size: 0.75rem;
+  font-size: 0.92rem;
   line-height: 1.5;
   color: #8b93a1;
 }
@@ -654,7 +768,7 @@ main {
   }
 
   .hero-title {
-    font-size: clamp(2.2rem, 4vw + 1rem, 3.9rem);
+    font-size: 48px;
   }
 
   .hero-actions {
@@ -663,11 +777,13 @@ main {
   }
 
   .portfolio-grid {
+    display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow: visible;
   }
 
   .portfolio-media {
-    height: 220px;
+    height: 280px;
   }
 
   .trusted-logos {
@@ -677,6 +793,11 @@ main {
 
   .impact-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .impact-title {
+    font-size: 40px;
+    line-height: 1.12;
   }
 }
 
@@ -692,9 +813,9 @@ main {
     flex-direction: column;
     gap: 6px;
     position: absolute;
-    top: 82px;
-    width: 156px;
-    padding: 16px 12px 12px;
+    top: 110px;
+    width: 210px;
+    padding: 28px 24px 22px;
     border-radius: 14px;
     background: #ffffff;
     border: 1px solid #edf0f3;
@@ -702,33 +823,50 @@ main {
     font-size: 0.6rem;
     color: var(--color-muted);
     text-align: left;
-  }
-
-  .hero-card-left {
-    left: -110px;
-    top: 90px;
-    transform: rotate(-6deg);
     z-index: 2;
   }
 
+  .hero-card-left {
+    left: -190px;
+    top: 120px;
+    transform: rotate(-6deg);
+  }
+
   .hero-card-right {
-    left: -70px;
-    top: 140px;
-    transform: rotate(4deg);
-    z-index: 1;
+    right: -190px;
+    left: auto;
+    top: 120px;
+    transform: rotate(6deg);
+  }
+
+  .hero-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    background: #ffffff;
+    border: 1px solid #edf0f3;
+    box-shadow: 0 8px 18px rgba(15, 17, 20, 0.1);
+    transform: translate(10px, 10px) rotate(2deg);
+    z-index: -1;
+  }
+
+  .hero-card-right::after {
+    transform: translate(10px, 10px) rotate(-2deg);
   }
 
   .card-icon {
     color: var(--color-accent);
     font-size: 0.9rem;
     position: absolute;
-    top: 10px;
-    right: 12px;
+    top: 12px;
+    right: 14px;
   }
 
   .card-copy {
     margin: 0;
-    padding-right: 8px;
+    padding-right: 12px;
+    padding-top: 6px;
     line-height: 1.35;
   }
 
@@ -739,16 +877,28 @@ main {
   }
 
   .portfolio-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 28px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 24px;
+    overflow: visible;
+  }
+
+  .portfolio .container {
+    max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .portfolio-card {
-    padding: 18px;
+    padding: 10px;
+    flex: 0 0 550px;
   }
 
   .portfolio-media {
-    height: 230px;
+    height: 320px;
   }
 
   .impact-grid {
@@ -758,6 +908,24 @@ main {
 
   .impact-card {
     padding: 24px;
+  }
+
+  .impact-value {
+    font-size: 48px;
+  }
+
+  .impact-card-title {
+    font-size: 1.18rem;
+  }
+
+  .impact-card-copy {
+    font-size: 0.98rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .portfolio-media {
+    height: 360px;
   }
 }
 
