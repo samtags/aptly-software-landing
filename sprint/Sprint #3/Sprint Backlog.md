@@ -6,10 +6,10 @@ Only tasks listed here may be implemented during Sprint #3.
 ## Selected Tasks
 | ID | Title | Estimate | Status |
 | --- | --- | --- | --- |
-| task-0016 | Hero Testimonial Card Positioning + Stacked Depth | 3 | To Do |
+| task-0016 | Hero Testimonial Card Positioning + Stacked Depth | 3 | Verified |
 | task-0017 | Hero Dot Pattern Radial Fade | 2 | Verified |
 | task-0018 | Impact Stat Typography Match | 2 | Verified |
-| task-0019 | Portfolio Card Size + Edge Fade | 3 | In Progress - Dev |
+| task-0019 | Portfolio Card Size + Edge Fade | 3 | Verified |
 | task-0020 | Trusted Logos Edge Fade | 2 | Verified |
 
 ## Total Story Points

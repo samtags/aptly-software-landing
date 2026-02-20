@@ -28,3 +28,6 @@ Initial decomposition based on screenshots in `./screenshots`. Tasks are estimat
 | task-0018 | Impact Stat Typography Match    | 2        | To Do  | Match impact stat typography to reference (feedback image #2/#3) |
 | task-0019 | Portfolio Card Size + Edge Fade | 3        | To Do  | Match card size + add edge fade (feedback image #5/#6) |
 | task-0020 | Trusted Logos Edge Fade         | 2        | To Do  | Add left/right edge fade to logo strip (feedback image #7) |
+| task-0021 | Portfolio Single-Row Tablet Layout | 3     | To Do  | Tablet: keep card size but render as single-row (same as web) |
+| task-0022 | Portfolio Single-Row Mobile Layout | 3     | To Do  | Mobile: keep card size but render as single-row (same as web) |
+| task-0023 | Impact Stats Tablet Layout      | 3        | To Do  | Tablet: two cards top row, one full-width bottom row |
