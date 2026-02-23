@@ -6,17 +6,19 @@
 ## Completed (Verified)
 - task-0017: Hero Dot Pattern Radial Fade
 - task-0018: Impact Stat Typography Match
+- task-0016: Hero Testimonial Card Positioning + Stacked Depth
+- task-0019: Portfolio Card Size + Edge Fade
 - task-0020: Trusted Logos Edge Fade
 
 ## Incomplete / Carry-Over
-- task-0016: Hero Testimonial Card Positioning + Stacked Depth (Status: To Do)
-- task-0019: Portfolio Card Size + Edge Fade (Status: In Progress - Dev)
+- None
 
 ## Demo Summary
 - Hero dot pattern radial fade updated.
 - Impact stats typography aligned (pending further stakeholder adjustments).
 - Trusted logos edge fade implemented.
+- Hero testimonial cards positioned with stacked depth.
+- Portfolio card sizing and edge fade aligned to reference.
 
 ## Notes
-- Sprint is not fully complete due to remaining tasks (task-0016, task-0019).
-- Awaiting stakeholder feedback for final visual tuning before QA re-verification.
+- Sprint completed with all tasks verified.

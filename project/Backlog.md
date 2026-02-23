@@ -23,11 +23,11 @@ Initial decomposition based on screenshots in `./screenshots`. Tasks are estimat
 | task-0013 | Hero Background Dot Pattern     | 2        | Verified | Add subtle dotted pattern in hero background (feedback image #1) |
 | task-0014 | Testimonial Card Stack & Align  | 3        | Verified | Stack cards, top-right icon, left-aligned text (feedback image #2) |
 | task-0015 | Global Background Color Update  | 1        | Verified | Set page background to clean white (feedback image #3) |
-| task-0016 | Hero Testimonial Card Positioning + Stacked Depth | 3 | To Do | Position cards left/right with stacked depth (feedback image #1) |
-| task-0017 | Hero Dot Pattern Radial Fade    | 2        | To Do  | Radial fade for hero dot pattern (feedback image #4) |
-| task-0018 | Impact Stat Typography Match    | 2        | To Do  | Match impact stat typography to reference (feedback image #2/#3) |
-| task-0019 | Portfolio Card Size + Edge Fade | 3        | To Do  | Match card size + add edge fade (feedback image #5/#6) |
-| task-0020 | Trusted Logos Edge Fade         | 2        | To Do  | Add left/right edge fade to logo strip (feedback image #7) |
+| task-0016 | Hero Testimonial Card Positioning + Stacked Depth | 3 | Verified | Position cards left/right with stacked depth (feedback image #1) |
+| task-0017 | Hero Dot Pattern Radial Fade    | 2        | Verified  | Radial fade for hero dot pattern (feedback image #4) |
+| task-0018 | Impact Stat Typography Match    | 2        | Verified  | Match impact stat typography to reference (feedback image #2/#3) |
+| task-0019 | Portfolio Card Size + Edge Fade | 3        | Verified  | Match card size + add edge fade (feedback image #5/#6) |
+| task-0020 | Trusted Logos Edge Fade         | 2        | Verified  | Add left/right edge fade to logo strip (feedback image #7) |
 | task-0021 | Portfolio Single-Row Tablet Layout | 3     | To Do  | Tablet: keep card size but render as single-row (same as web) |
 | task-0022 | Portfolio Single-Row Mobile Layout | 3     | To Do  | Mobile: keep card size but render as single-row (same as web) |
 | task-0023 | Impact Stats Tablet Layout      | 3        | To Do  | Tablet: two cards top row, one full-width bottom row |

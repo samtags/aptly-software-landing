@@ -2,7 +2,7 @@
 
 ## Sprint Number
 
-Sprint #3
+Sprint #4
 
 ## Status
 
@@ -11,11 +11,11 @@ Active
 
 ## Sprint Objective
 
-Address feedback on Hero, Portfolio, Partner Companies, and Impact stats to align with the latest reference imagery.
+Finalize remaining layout sections and lock tablet/mobile responsiveness for portfolio and impact.
 
 ## Sprint Backlog Source
 
-sprint/Sprint #3/Sprint Backlog.md
+sprint/Sprint #4/Sprint Backlog.md
 
 ## Scope Lock
 
