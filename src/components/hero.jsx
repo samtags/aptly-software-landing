@@ -5,7 +5,7 @@ import { PiStarFill } from "react-icons/pi";
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="flex justify-center items-center mt-13 lg:mt-22">
+      <div className="flex justify-center items-center mt-13 lg:mt-23">
         <div className="flex gap-3 items-center border border-[#e2e7ee] rounded-full p-1 pr-3 text-xs bg-white">
           <div className="flex items-center gap-2 bg-[#e7f8f4] px-4 py-1 rounded-full  font-medium text-green-800">
             <div className="w-[10px] h-[10px] rounded-full bg-[#3cba8c40] flex items-center justify-center">
@@ -18,7 +18,7 @@ export default function Hero() {
           <span className="font-medium hidden md:inline">Inquire Now</span>
         </div>
       </div>
-      <h1 className="text-[32px] md:text-[40px] lg:text-[48px] font-bold leading-10 md:leading-11 lg:leading-16 text-center px-12 mt-4 md:mt-8 lg:mt-9 mb-6 lg:mb-7 tracking-tight md:max-w-[580px] lg:max-w-[720px] md:mx-auto">
+      <h1 className="text-[32px] md:text-[40px] lg:text-[48px] font-bold leading-10 md:leading-11 lg:leading-18 text-center px-12 mt-4 md:mt-8 lg:mt-7 mb-6 lg:mb-6 tracking-tight md:max-w-[580px] lg:max-w-[720px] md:mx-auto">
         Modern problems require modern solutions
       </h1>
       <p className="px-4 text-center text-sm lg:text-base font-medium text-[#323745] mb-9 md:max-w-[530px] md:mx-auto">
@@ -39,7 +39,7 @@ export default function Hero() {
           </div>
         </button>
       </div>
-      <div className="flex justify-center mt-6">
+      <div className="flex justify-center mt-6 lg:mt-12">
         <div className="flex gap-2 items-center">
           <div className="flex">
             <div>
