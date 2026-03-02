@@ -95,3 +95,22 @@ body::before {
   pointer-events: none;
   z-index: -1;
 }
+
+.projects-fade {
+  position: relative;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 28%,
+    #000 86%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 28%,
+    #000 86%,
+    transparent 100%
+  );
+}
