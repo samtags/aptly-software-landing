@@ -5,7 +5,7 @@ import { PiStarFill } from "react-icons/pi";
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="flex justify-center items-center mt-11 lg:mt-22">
+      <div className="flex justify-center items-center mt-13 lg:mt-22">
         <div className="flex gap-3 items-center border border-[#e2e7ee] rounded-full p-1 pr-3 text-xs bg-white">
           <div className="flex items-center gap-2 bg-[#e7f8f4] px-4 py-1 rounded-full  font-medium text-green-800">
             <div className="w-[10px] h-[10px] rounded-full bg-[#3cba8c40] flex items-center justify-center">
@@ -39,7 +39,7 @@ export default function Hero() {
           </div>
         </button>
       </div>
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center mt-6">
         <div className="flex gap-2 items-center">
           <div className="flex">
             <div>
