@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@config "../../tailwind.config.js";
 
 @font-face {
   font-family: "Satoshi";
@@ -74,22 +75,22 @@ body::before {
   inset: -40px 0 auto 0;
   height: 640px;
   background-image: radial-gradient(
-    rgba(162, 167, 174, 0.15) 0.9px,
-    transparent 0.9px
+    rgba(162, 167, 174, 0.15) 1.2px,
+    transparent 1.2px
   );
-  background-size: 20px 20px;
+  background-size: 17px 17px;
   opacity: 1;
   -webkit-mask-image: radial-gradient(
     ellipse at center,
     #000 0%,
     #000 45%,
-    transparent 75%
+    transparent 50%
   );
   mask-image: radial-gradient(
     ellipse at center,
     #000 0%,
     #000 45%,
-    transparent 75%
+    transparent 50%
   );
   pointer-events: none;
   z-index: -1;
