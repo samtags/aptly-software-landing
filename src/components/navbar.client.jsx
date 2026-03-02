@@ -34,7 +34,7 @@ export default function NavbarClient() {
         >
           <div className="py-2 px-4 lg:mx-auto lg:max-w-[800px]">
             <div
-              className="bg-[#f3f5f6] rounded-[32px] rounded-t-[24px] p-2 pt-4 px-4 pb-5"
+              className="bg-[#f3f5f6] rounded-[32px] rounded-t-[24px] p-2 pb-4"
               initial={{ y: 12, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 12, opacity: 0 }}
