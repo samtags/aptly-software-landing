@@ -1,7 +1,7 @@
 export default function Companies() {
   return (
     <section className="mt-8">
-      <header className="uppercase text-[#697289] text-xs font-medium text-center">
+      <header className="uppercase text-[#697289] text-xs font-bold text-center">
         Trusted by top companies
       </header>
       <div className="flex justify-center">

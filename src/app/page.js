@@ -2,6 +2,7 @@ import Companies from "../components/companies";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import Projects from "../components/projects";
+import Statistics from "../components/statistics";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <Companies />
+      <Statistics />
     </div>
   );
 }
