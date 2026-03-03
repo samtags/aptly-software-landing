@@ -15,9 +15,9 @@ export default function Home() {
       <Hero />
       <Projects />
       <Companies />
-      <Works />
       <Statistics />
       <Services />
+      <Works />
     </div>
   );
 }
