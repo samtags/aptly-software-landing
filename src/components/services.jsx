@@ -11,10 +11,10 @@ export default function Services() {
       <SectionHeader
         main="From ideas into high-impact solutions"
         sub="That inspire and convert"
-        className="mt-4"
+        className="mt-4 md:max-w-[600px]"
       />
-      <div className="bg-[#f9fafb] rounded-[48px] p-5 mt-12 flex flex-col gap-5">
-        <div className="bg-white rounded-[32px] p-5 service-card-shadow">
+      <div className="bg-[#f9fafb] rounded-[48px] p-5 mt-12 flex flex-col gap-5 md:grid md:grid-cols-2">
+        <div className="bg-white rounded-[32px] p-5 service-card-shadow md:order-[2] flex flex-col">
           <div className="font-bold text-[20px]">Web & mobile apps</div>
           <p className="mt-2 text-sm font-medium text-[#50576b]">
             We design and develop high-performing web and mobile applications
@@ -23,17 +23,17 @@ export default function Services() {
           <img
             src="/png/VVMO6zTJk0afAQzH1AM75oByNQ.png"
             alt="Web & mobile apps"
-            className="w-full object-contain aspect-video mt-8 bottom-fade"
+            className="object-contain mt-8 bottom-fade h-[250px] md:h-[290px] lg:h-[400px]"
           />
         </div>
-        <div className="bg-white rounded-[32px] p-5 service-card-shadow">
+        <div className="bg-white rounded-[32px] p-5 service-card-shadow md:order-[1] md:col-span-full">
           <div className="font-bold text-[20px]">No-code websites</div>
-          <p className="mt-2 text-sm font-medium text-[#50576b]">
+          <p className="mt-2 text-sm font-medium text-[#50576b] md:max-w-[500px]">
             Launch faster with powerful, fully customizable websites built with
             Webflow and Framer that are easy to manage and optimized for
             conversion.
           </p>
-          <div className="flex gap-[10px] flex-wrap mt-8">
+          <div className="flex gap-[10px] flex-wrap mt-8 md:max-w-[450px]">
             <Badge label="Design" icon={<FaRibbon fontSize={14} />} />
             <Badge label="User Research" icon={<FaRibbon fontSize={14} />} />
             <Badge label="Branding" icon={<FaRibbon fontSize={14} />} />
@@ -46,8 +46,8 @@ export default function Services() {
             <Badge label="SEO Optimization" icon={<FaRibbon fontSize={14} />} />
           </div>
         </div>
-        <div className="bg-white rounded-[32px] p-5 service-card-shadow">
-          <ul className="border border-[#e5eaf0] rounded-[18px] services-bottom-fade p-[6px] font-medium text-sm mb-12">
+        <div className="bg-white rounded-[32px] p-5 service-card-shadow md:order-[3] flex flex-col gap-12">
+          <ul className="border border-[#e5eaf0] rounded-[18px] services-bottom-fade p-[6px] font-medium text-sm md:order-2">
             <li className="flex justify-between items-center px-4 py-3 bg-[#f9fafb] rounded-xl">
               <span>Storyboarding</span>
               <RiCheckFill fontSize={20} color="#ff5147" />
@@ -73,26 +73,30 @@ export default function Services() {
               <RiCheckFill fontSize={20} color="#ff5147" />
             </li>
           </ul>
-          <div className="font-bold text-[20px]">Motion design & animation</div>
-          <p className="mt-2 text-sm font-medium text-[#50576b]">
-            Bring your brand to life with smooth, engaging motion design that
-            boost engagement.
-          </p>
-          <button className="flex justify-center items-center gap-3 bg-white text-sm font-medium pl-4 py-1 pr-1 rounded-full border border-[#d2dae4] text-[#323745] mt-5">
-            Book a call
-            <div className="bg-[#f3f5f6] p-2 rounded-full">
-              <HiArrowUpRight strokeWidth={1} fontSize={12} />
+          <div className="md:order-1">
+            <div className="font-bold text-[20px]">
+              Motion design & animation
             </div>
-          </button>
+            <p className="mt-2 text-sm font-medium text-[#50576b]">
+              Bring your brand to life with smooth, engaging motion design that
+              boost engagement.
+            </p>
+            <button className="flex justify-center items-center gap-3 bg-white text-sm font-medium pl-4 py-1 pr-1 rounded-full border border-[#d2dae4] text-[#323745] mt-5">
+              Book a call
+              <div className="bg-[#f3f5f6] p-2 rounded-full">
+                <HiArrowUpRight strokeWidth={1} fontSize={12} />
+              </div>
+            </button>
+          </div>
         </div>
-        <div className="bg-white rounded-[32px] p-5 pb-0 service-card-shadow">
-          <div className="font-bold text-[20px]">MVP Design & development</div>
-          <p className="mt-2 text-sm font-medium text-[#50576b]">
+        <div className="bg-white rounded-[32px] p-5 pb-0 service-card-shadow md:order-[4] md:col-span-full">
+          <div className="font-bold text-[20px]">MVP design & development</div>
+          <p className="mt-2 text-sm font-medium text-[#50576b] md:max-w-[500px]">
             Validate your idea with a fast with functional, and beautifully
             designed MVP. We specialize in rapid prototyping, lean development,
             and scalable design systems.
           </p>
-          <div className="mt-8 p-2 bottom-fade border border-[#e5eaf0] rounded-2xl bg-[#fff]">
+          <div className="mt-8 bottom-fade border border-[#e5eaf0] rounded-2xl bg-[#fff] md:h-[170px]">
             <img
               src="/png/MtntyuU0gcTC33zlQFZa3E3DsYk.png"
               alt="MVP development"
@@ -100,7 +104,7 @@ export default function Services() {
             />
           </div>
         </div>
-        <div className="p-6 bg-[#151619] rounded-[32px] h-[230px] flex flex-col justify-end service-accent relative overflow-hidden">
+        <div className="p-6 bg-[#151619] rounded-[32px] h-[230px] md:h-auto flex flex-col justify-end service-accent relative overflow-hidden md:order-[5] md:col-span-full">
           <div>
             <div className="text-white font-bold text-xl">
               World-class Design,
