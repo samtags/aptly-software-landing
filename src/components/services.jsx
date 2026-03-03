@@ -9,7 +9,7 @@ import {
 
 export default function Services() {
   return (
-    <section className="px-5 pt-13">
+    <section className="px-5 pt-13 max-w-[1100px] mx-auto">
       <SectionTitle>Our Services</SectionTitle>
       <SectionHeader
         main="From ideas into high-impact solutions"

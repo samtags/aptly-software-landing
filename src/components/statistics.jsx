@@ -13,7 +13,7 @@ export default function Statistics() {
           className="max-w-[550px] mx-auto px-5 md:px-0"
         />
 
-        <div className="flex flex-col lg:flex-row gap-5 p-5 mt-4 lg:mt-11 max-w-[1200px] mx-auto">
+        <div className="flex flex-col lg:flex-row gap-5 p-5 mt-4 lg:mt-11 max-w-[1300px] mx-auto">
           <div className="flex flex-col gap-5 md:flex-row lg:w-2/3">
             <Card
               highligh="1,200+"
