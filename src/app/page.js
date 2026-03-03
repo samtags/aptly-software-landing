@@ -4,6 +4,7 @@ import Navbar from "../components/navbar";
 import Projects from "../components/projects";
 import Services from "../components/services";
 import Statistics from "../components/statistics";
+import Works from "../components/works";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <Companies />
+      <Works />
       <Statistics />
       <Services />
     </div>
