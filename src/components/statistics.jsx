@@ -10,7 +10,7 @@ export default function Statistics() {
         <SectionHeader
           main="Aptly simplifies the process,"
           sub="and delivers results."
-          className="max-w-[550px] mx-auto"
+          className="max-w-[550px] mx-auto px-5 md:px-0"
         />
 
         <div className="flex flex-col lg:flex-row gap-5 p-5 mt-4 lg:mt-11 max-w-[1200px] mx-auto">
