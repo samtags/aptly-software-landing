@@ -4,6 +4,7 @@ import Navbar from "../components/navbar";
 import Projects from "../components/projects";
 import Services from "../components/services";
 import Statistics from "../components/statistics";
+import Testimonies from "../components/testimonies";
 import Works from "../components/works";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Statistics />
       <Services />
       <Works />
+      <Testimonies />
     </div>
   );
 }
