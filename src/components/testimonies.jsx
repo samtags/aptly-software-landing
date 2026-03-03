@@ -10,13 +10,13 @@ export default function Testimonies() {
       <SectionHeader
         main="Results that speaks volume"
         sub="Read success stories"
-        className="text-center max-w-[500px] mx-auto"
+        className="mt-4 text-center max-w-[500px] mx-auto"
       />
       <p className="text-center text-[#697289] text-[14px] md:text-[15px] font-medium mt-4 max-w-[450px] mx-auto">
         Find out how our happy clients are raving about us.
       </p>
 
-      <div className="bg-[#f9fafb] rounded-[48px] p-5 mt-12 flex flex-col gap-5">
+      <div className="bg-[#f9fafb] rounded-[48px] p-5 mt-12 flex flex-col gap-5 md:grid md:grid-cols-2 lg:grid-cols-3">
         <Card
           rate="8X"
           rateDescription="Increase in conversion rate"
@@ -25,6 +25,7 @@ export default function Testimonies() {
           name="David Callahan"
           company="Marketing Director, Spotify"
           icon={<PlaceholderIcon />}
+          className="md:col-span-full lg:col-span-1 lg:row-span-2"
         />
         <Card
           rate="2X"
@@ -35,6 +36,7 @@ export default function Testimonies() {
           name="David Callahan"
           company="Marketing Director, Spotify"
           icon={<PlaceholderIcon />}
+          className="md:col-span-1 lg:col-span-2"
         />
         <Card
           body='"Their animation work took our product videos to the next level. The team truly understands user experience and storytelling."'
@@ -42,12 +44,14 @@ export default function Testimonies() {
           name="Tom Becker"
           company="Founder, Pulse Core"
           theme="dark"
+          className="md:col-span-1"
         />
         <Card
           body='""We needed a modern, high-converting website, and Bravio delivered. Their expertise helped us increase conversion rate by 400% in just a week!"'
           imageUrl="/png/YlbsDACEKLniAdZ2B90nBFRBt14.png"
           name="Danielle Reyes"
           company="Founder, Ember & Co"
+          className="md:col-span-full lg:col-span-1"
         />
       </div>
     </section>
@@ -55,6 +59,7 @@ export default function Testimonies() {
 }
 
 function Card({
+  className,
   rate,
   rateDescription,
   rateClassName,
@@ -68,39 +73,43 @@ function Card({
   return (
     <div
       className={`
-      bg-white rounded-[32px] p-7 service-card-shadow md:order-[1] lg:order-[2] md:col-span-full lg:col-span-2 lg:row-span-1
-      ${theme === "dark" && "bg-[#151619]!"}
+      bg-white rounded-[32px] p-7 service-card-shadow flex flex-col justify-between
+      ${theme === "dark" && "bg-[#151619]!"} ${className}
     `}
     >
-      {(rate || rateDescription) && (
-        <div className={`mb-6 ${rateClassName}`}>
-          {rate && <div className="font-bold text-[28px]">{rate}</div>}
-          {rateDescription && (
-            <div className="text-[#50576b] text-[18px] font-bold">
-              {rateDescription}
-            </div>
-          )}
-        </div>
-      )}
-
       <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="100%"
-          height="100%"
-          viewBox="0 0 24 24"
-          fill="var(--token-72f1587e-8bbc-424b-bdb9-13d999bb0e54, rgb(255, 81, 71))"
-          className="w-[24px] h-[24px] icon icon-tabler icons-tabler-filled icon-tabler-quote"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>{" "}
-          <path d="M9 5a2 2 0 0 1 2 2v6c0 3.13 -1.65 5.193 -4.757 5.97a1 1 0 1 1 -.486 -1.94c2.227 -.557 3.243 -1.827 3.243 -4.03v-1h-3a2 2 0 0 1 -1.995 -1.85l-.005 -.15v-3a2 2 0 0 1 2 -2z"></path>{" "}
-          <path d="M18 5a2 2 0 0 1 2 2v6c0 3.13 -1.65 5.193 -4.757 5.97a1 1 0 1 1 -.486 -1.94c2.227 -.557 3.243 -1.827 3.243 -4.03v-1h-3a2 2 0 0 1 -1.995 -1.85l-.005 -.15v-3a2 2 0 0 1 2 -2z"></path>{" "}
-        </svg>
-        <p
-          className={`text-[#50576b] text-[14px] font-medium mt-1 ${theme === "dark" && "text-white"}`}
-        >
-          {body}
-        </p>
+        {(rate || rateDescription) && (
+          <div className={`mb-6 ${rateClassName}`}>
+            {rate && (
+              <div className="font-bold text-[28px] lg:text-[32px]">{rate}</div>
+            )}
+            {rateDescription && (
+              <div className="text-[#50576b] text-[18px] lg:text-[20px] font-bold">
+                {rateDescription}
+              </div>
+            )}
+          </div>
+        )}
+
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100%"
+            height="100%"
+            viewBox="0 0 24 24"
+            fill="var(--token-72f1587e-8bbc-424b-bdb9-13d999bb0e54, rgb(255, 81, 71))"
+            className="w-[24px] h-[24px] icon icon-tabler icons-tabler-filled icon-tabler-quote"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>{" "}
+            <path d="M9 5a2 2 0 0 1 2 2v6c0 3.13 -1.65 5.193 -4.757 5.97a1 1 0 1 1 -.486 -1.94c2.227 -.557 3.243 -1.827 3.243 -4.03v-1h-3a2 2 0 0 1 -1.995 -1.85l-.005 -.15v-3a2 2 0 0 1 2 -2z"></path>{" "}
+            <path d="M18 5a2 2 0 0 1 2 2v6c0 3.13 -1.65 5.193 -4.757 5.97a1 1 0 1 1 -.486 -1.94c2.227 -.557 3.243 -1.827 3.243 -4.03v-1h-3a2 2 0 0 1 -1.995 -1.85l-.005 -.15v-3a2 2 0 0 1 2 -2z"></path>{" "}
+          </svg>
+          <p
+            className={`text-[#50576b] text-[14px] font-medium mt-1 ${theme === "dark" && "text-white"}`}
+          >
+            {body}
+          </p>
+        </div>
       </div>
       <div className="flex justify-between items-center mt-7">
         <div className="flex items-center gap-3">
