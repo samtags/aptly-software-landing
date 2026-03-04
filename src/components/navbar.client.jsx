@@ -32,7 +32,7 @@ export default function NavbarClient() {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.35 }}
         >
-          <div className="py-2 px-4 pr-7 lg:mx-auto lg:max-w-[800px]">
+          <div className="py-2 px-4 lg:mx-auto lg:max-w-[800px]">
             <div
               className="bg-[#f3f5f6] rounded-[32px] rounded-t-[24px] p-2 pb-4"
               initial={{ y: 12, opacity: 0 }}
