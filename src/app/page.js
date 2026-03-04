@@ -1,6 +1,7 @@
 import Companies from "../components/companies";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
+import Pricing from "../components/pricing";
 import Process from "../components/process";
 import Projects from "../components/projects";
 import Services from "../components/services";
@@ -22,6 +23,7 @@ export default function Home() {
       <Works />
       <Testimonies />
       <Process />
+      <Pricing />
     </div>
   );
 }
