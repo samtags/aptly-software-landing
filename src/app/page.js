@@ -1,4 +1,6 @@
 import Companies from "../components/companies";
+import FAQs from "../components/faqs";
+import Footer from "../components/footer";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import Pricing from "../components/pricing";
@@ -24,6 +26,8 @@ export default function Home() {
       <Testimonies />
       <Process />
       <Pricing />
+      <FAQs />
+      <Footer />
     </div>
   );
 }

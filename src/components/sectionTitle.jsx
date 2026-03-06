@@ -1,6 +1,8 @@
-export default function SectionTitle({ children }) {
+export default function SectionTitle({ children, className }) {
   return (
-    <header className="text-[#0f1115] text-sm inline-block font-medium p-2 relative">
+    <header
+      className={`text-[#0f1115] text-sm inline-block font-medium p-2 relative ${className}`}
+    >
       <svg
         className="w-[12px] h-[12px] absolute top-0 right-0"
         viewBox="0 0 12 12"

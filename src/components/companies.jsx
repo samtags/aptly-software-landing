@@ -1,9 +1,11 @@
-export default function Companies() {
+export default function Companies({ showHeader = true }) {
   return (
     <section className="mt-8">
-      <header className="uppercase text-[#697289] text-xs font-bold text-center">
-        Trusted by top companies
-      </header>
+      {showHeader && (
+        <header className="uppercase text-[#697289] text-xs font-bold text-center">
+          Trusted by top companies
+        </header>
+      )}
       <div className="flex justify-center">
         <div className="side-fade">
           <div className="flex gap-8 justify-center items-center mt-4 no-wrap overflow-x-hidden">
