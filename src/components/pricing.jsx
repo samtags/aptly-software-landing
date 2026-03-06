@@ -8,7 +8,7 @@ import { TestimonyCard } from "./testimonies";
 
 export default function Pricing() {
   return (
-    <section className="pt-[96px] px-5 max-w-[1100px] mx-auto">
+    <section id="pricing" className="pt-[96px] px-5 max-w-[1100px] mx-auto">
       <div className="text-center">
         <SectionTitle>Pricing Plans</SectionTitle>
       </div>
