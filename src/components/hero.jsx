@@ -26,18 +26,25 @@ export default function Hero() {
         problems for businesses and consumers.
       </p>
       <div className="flex flex-col md:flex-row md:justify-center px-4 gap-3">
-        <button className="flex justify-center items-center gap-3 bg-[#151619] text-white text-sm font-medium p-4 md:pr-8 py-[10px] rounded-full">
+        <a
+          target="__blank"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfQPH2hSL8C62bfOwNAlxNJbqDXBPoDAAxvM9PRLGpNu8Mv_A/viewform?usp=preview"
+          className="flex justify-center items-center gap-3 bg-[#151619] text-white text-sm font-medium p-4 md:pr-8 py-[10px] rounded-full"
+        >
           <div className="bg-[#ffffff21] p-2 rounded-full">
             <IoCallOutline width={2} fontSize={14} />
           </div>
           Book an intro call
-        </button>
-        <button className="flex justify-center items-center gap-3 bg-white text-sm font-medium p-4 py-[10px] md:pl-8 rounded-full border border-[#d2dae4] text-[#323745]">
+        </a>
+        <a
+          href="/#pricing"
+          className="flex justify-center items-center gap-3 bg-white text-sm font-medium p-4 py-[10px] md:pl-8 rounded-full border border-[#d2dae4] text-[#323745]"
+        >
           View Pricing
           <div className="bg-[#f3f5f6] p-2 rounded-full">
             <HiArrowUpRight strokeWidth={1} fontSize={12} />
           </div>
-        </button>
+        </a>
       </div>
       <div className="flex justify-center mt-6 lg:mt-12">
         <div className="flex gap-2 items-center">

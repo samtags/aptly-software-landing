@@ -72,9 +72,14 @@ export default function NavbarClient() {
                 </li>
               </ul>
 
-              <button className="bg-white text-sm font-medium p-3 rounded-full text-[#323745] w-full mt-4">
-                Book a Call
-              </button>
+              <a
+                target="__blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfQPH2hSL8C62bfOwNAlxNJbqDXBPoDAAxvM9PRLGpNu8Mv_A/viewform?usp=preview"
+              >
+                <button className="bg-white text-sm font-medium p-3 rounded-full text-[#323745] w-full mt-4 cursor-pointer">
+                  Book a Call
+                </button>
+              </a>
             </div>
           </div>
         </motion.div>

@@ -24,7 +24,9 @@ export default function Navbar() {
               Company
               <RxChevronDown />
             </li>
-            <li className="p-2">Pricing</li>
+            <li className="p-2">
+              <a href="/#pricing">Pricing</a>
+            </li>
             <li className="p-2">Contact</li>
             <li className="p-2 flex gap-2 items-center">
               Projects
@@ -39,12 +41,16 @@ export default function Navbar() {
           >
             <HiOutlineMenu fontSize={20} />
           </button>
-          <button className="hidden lg:flex justify-center items-center gap-3 bg-white text-sm font-semibold p-2 md:pl-4 rounded-full border border-[#d2dae4] text-[#323745]">
+          <a
+            className="cursor-pointer hidden lg:flex justify-center items-center gap-3 bg-white text-sm font-semibold p-2 md:pl-4 rounded-full border border-[#d2dae4] text-[#323745]"
+            target="__blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfQPH2hSL8C62bfOwNAlxNJbqDXBPoDAAxvM9PRLGpNu8Mv_A/viewform?usp=preview"
+          >
             Book a Call
             <div className="bg-[#f3f5f6] p-[6px] rounded-full">
               <HiArrowUpRight strokeWidth={1} fontSize={10} />
             </div>
-          </button>
+          </a>
         </nav>
       </div>
       <NavbarClient />
