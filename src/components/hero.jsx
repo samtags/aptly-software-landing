@@ -23,7 +23,7 @@ export default function Hero() {
       </h1>
       <p className="px-4 text-center text-sm lg:text-base font-medium text-[#323745] mb-9 md:max-w-[530px] md:mx-auto">
         We design, build, and operate modern applications that solve real-world
-        problems for businesses and consumers.
+        problems for businesses and consumers
       </p>
       <div className="flex flex-col md:flex-row md:justify-center px-4 gap-3">
         <a
