@@ -16,22 +16,22 @@ export default function Statistics() {
         <div className="flex flex-col lg:flex-row gap-5 p-5 mt-4 lg:mt-11 max-w-[1300px] mx-auto">
           <div className="flex flex-col gap-5 md:flex-row lg:w-2/3">
             <Card
-              highligh="1,200+"
-              title="Successful Projects Delivered"
-              description="From startups to enterprises, we've built high-performing websites and digital experiences that drive real results."
+              highligh="99.9%"
+              title="Platform Uptime"
+              description="Modern infrastructure engineered for reliability and continuous operation."
               className="flex-1 shrink-0"
             />
             <Card
-              highligh="5K"
-              title="Ad Campaigns Optimized"
-              description="We've helped brands lower acquisition costs and boost ROI with data-driven paid media strategies."
+              highligh="10K+"
+              title="Active Users Across Platforms"
+              description="Applications built for real usage, not just demos or portfolios."
               className="flex-1 shrink-0"
             />
           </div>
           <Card
-            highligh="$10M+"
-            title="Revenue Generated for Clients"
-            description="Our strategic design, marketing, and conversion optimization have helped businesses scale and maximize profits."
+            highligh="3+"
+            title="Years Building Systems"
+            description="Experience operating software in real-world environments."
             className="lg:w-1/3"
           />
         </div>
