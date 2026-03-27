@@ -17,43 +17,43 @@ export default function Projects() {
           }}
         >
           <Carousel
-            title="Vertax Labs (1)"
-            description="Web design • development"
-            rate="120%"
-            rateDescription="Boost in leads"
+            title="Elite-V"
+            description="Landing Page • Primer"
+            rate="150%"
+            rateDescription="Lead conversion rate"
             imageUrl="/png/YRBacVkY1hNjQzvJVDb24A3JOM.png"
           />
           <Carousel
-            title="Vertax Labs (2)"
-            description="Web design • development"
+            title="Pasahero"
+            description="Mobile Development • Plus"
             rate="120%"
             rateDescription="Boost in leads"
             imageUrl="/png/LWaKedMy6DtEAbrBCG2JzD13Tc.png"
           />
           <Carousel
-            title="Vertax Labs (3)"
-            description="Web design • development"
+            title="TicketsPH"
+            description="App Development • Pro"
             rate="120%"
             rateDescription="Boost in leads"
             imageUrl="/png/GSJQypQMYu1yzL9SeVvdATXD6tY.png"
           />
           <Carousel
-            title="Vertax Labs (1)"
-            description="Web design • development"
-            rate="120%"
-            rateDescription="Boost in leads"
+            title="Elite-V"
+            description="Landing Page • Primer"
+            rate="150%"
+            rateDescription="Lead conversion rate"
             imageUrl="/png/YRBacVkY1hNjQzvJVDb24A3JOM.png"
           />
           <Carousel
-            title="Vertax Labs (2)"
-            description="Web design • development"
+            title="Pasahero"
+            description="Mobile Development • Plus"
             rate="120%"
             rateDescription="Boost in leads"
             imageUrl="/png/LWaKedMy6DtEAbrBCG2JzD13Tc.png"
           />
           <Carousel
-            title="Vertax Labs (3)"
-            description="Web design • development"
+            title="TicketsPH"
+            description="App Development • Pro"
             rate="120%"
             rateDescription="Boost in leads"
             imageUrl="/png/GSJQypQMYu1yzL9SeVvdATXD6tY.png"
