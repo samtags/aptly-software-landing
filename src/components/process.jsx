@@ -11,7 +11,7 @@ export default function Process() {
         <SectionTitle>Our process</SectionTitle>
         <SectionHeader
           main="A proven & effective "
-          sub="workflow process."
+          sub="workflow progress."
           className="mt-4 max-w-[300px] md:max-w-[400px]"
         />
         <p className="text-[#697289] text-[14px] md:text-[15px] font-medium mt-4 max-w-[300px]">
@@ -22,29 +22,28 @@ export default function Process() {
       <div className="flex flex-col pt-12 md:pt-0">
         <Step
           step="01"
-          title="Discover & Strategy"
-          description="Through discovery workshops and research, we start by defining a strategy aligned with your vision."
+          title="Initial Meeting"
+          description="We start by understanding your business—your goals, current challenges, and where you’re experiencing friction. This helps us identify if and how we can create real value."
         />
         <Step
           step="02"
-          title="Plan & Prioritize"
-          description="We map out user journeys, project milestones, and deliverables ensuring a smooth, transparent workflow from start to finish."
+          title="Discovery"
+          description="We analyze your workflows, users, and requirements to define the right solution. This phase focuses on translating your pain points into a clear, actionable approach."
         />
         <Step
           step="03"
-          title="Design & Prototyping"
-          description="Our team crafts purposeful designs, copy, and branding that communicate clearly and convert."
+          title="Agreement"
+          description="We present a structured plan outlining the scope, sprint estimate, timeline, and pricing. This ensures alignment before any development begins."
         />
         <Step
           step="04"
-          title="Build & Launch"
-          description="Whether it’s no-code or custom, we bring your digital presence to life with pixel-perfect execution and performance optimization."
+          title="Development Kick-off"
+          description="Once approved, we initiate the project with a defined sprint plan. Development follows a structured cycle with regular updates, feedback loops, and incremental delivery."
         />
         <Step
           step="05"
-          title="Support & Evolve"
-          description="
-Post-launch, we stay close—monitoring performance, making refinements, and helping your brand adapt and grow continuously."
+          title="Deployment & Support"
+          description="After release, we handle deployment and remain involved for monitoring, fixes, and continuous improvements as your product evolves."
           showLine={false}
         />
       </div>
