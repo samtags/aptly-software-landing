@@ -54,7 +54,7 @@ export default function Services() {
           </div>
         </div>
         <div className="bg-white rounded-[32px] p-7 service-card-shadow flex flex-col lg:flex-row gap-12 md:order-[3] lg:col-span-2 lg:row-span-1">
-          <ul className="border border-[#e5eaf0] flex flex-col gap-1 rounded-[18px] services-bottom-fade p-[6px] font-medium text-sm lg:text-xs md:order-2 lg:w-[260px]">
+          <ul className="border border-[#e5eaf0] flex flex-col gap-1 rounded-[18px] services-bottom-fade p-[6px] font-medium text-sm lg:text-xs md:order-2 lg:w-[400px]">
             <li className="flex justify-between items-center px-4 py-3 bg-[#f9fafb] rounded-xl">
               <span>Problem Discovery</span>
               <RiCheckboxCircleFill fontSize={12} color="#ff5147" />
