@@ -18,41 +18,43 @@ export default function Testimonies() {
 
       <div className="bg-[#f9fafb] rounded-[48px] p-5 mt-12 flex flex-col gap-5 md:grid md:grid-cols-2 lg:grid-cols-3">
         <TestimonyCard
-          rate="8X"
-          rateDescription="Increase in conversion rate"
-          body="“We needed a modern, high-converting website, and the Bravio team delivered beyond expectations. Their design and SEO expertise helped us increase conversion rate by 800% in just two weeks. Highly recommend!”"
+          rate="99.9%"
+          rateDescription="Uptime"
+          body="“Reliability was our biggest concern when scaling. Aptly delivered a platform that has maintained 99.9% uptime even during peak usage. The system just works, stable, fast, and dependable. That level of operational consistency gave us the confidence to grow.”"
           imageUrl="/png/YlbsDACEKLniAdZ2B90nBFRBt14.png"
-          name="David Callahan"
-          company="Marketing Director, Spotify"
+          name="Richard Calipay"
+          company="Software Developer, Pulp"
           icon={<PlaceholderIcon />}
           className="md:col-span-full lg:col-span-1 lg:row-span-2"
         />
         <TestimonyCard
-          rate="2X"
-          rateDescription="Increase in lead generation"
+          rate="3X"
+          rateDescription="Performance Improvement"
           rateClassName="flex items-center gap-3"
-          body='"From branding to website design, every detail was meticulously handled. The team’s expertise helped us launch faster, and the results have been phenomenal!"'
+          body='"We saw a 3X improvement in performance across our core services. Response times became faster, driver-passenger matching became smoother, and overall user experience significantly improved"'
           imageUrl="/png/XaslT2pMztTMP7q7d0zrknfM4.png"
-          name="David Callahan"
-          company="Marketing Director, Spotify"
+          name="Russ Bravo"
+          company="Operations Manager, PasaHero"
           icon={<PlaceholderIcon />}
           className="md:col-span-1 lg:col-span-2"
         />
         <TestimonyCard
-          body='"Their animation work took our product videos to the next level. The team truly understands user experience and storytelling."'
+          body='"Aptly built an offline-capable system that syncs reliably and validates tickets instantly. During live events, it performs fast and consistently without breaking under pressure"'
           imageUrl="/png/TGbM5VpvWt795kur8Wf2anMLlhk.png"
-          name="Tom Becker"
-          company="Founder, Pulse Core"
+          name="Developer"
+          company="Tickets PH"
           theme="dark"
           className="md:col-span-1"
         />
         <TestimonyCard
-          body='""We needed a modern, high-converting website, and Bravio delivered. Their expertise helped us increase conversion rate by 400% in just a week!"'
+          body='""We needed infrastructure that could handle peak traffic during major ticket launches without downtime. Aptly engineered the platform for scale and reliability from day one. The system has remained stable during high-demand releases, giving us full confidence in our operations."'
           imageUrl="/png/YlbsDACEKLniAdZ2B90nBFRBt14.png"
-          name="Danielle Reyes"
-          company="Founder, Ember & Co"
+          name="CTO"
+          company="Tickets PH"
           className="md:col-span-full lg:col-span-1"
         />
+      
+        
       </div>
     </section>
   );
