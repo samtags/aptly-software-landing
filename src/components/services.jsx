@@ -62,27 +62,39 @@ export default function Services() {
           <ul className="border border-[#e5eaf0] flex flex-col gap-1 rounded-[18px] services-bottom-fade p-[6px] font-medium text-sm lg:text-xs md:order-2 lg:w-[400px]">
             <li className="flex justify-between items-center px-4 py-3 bg-[#f9fafb] rounded-xl">
               <span>Problem Discovery</span>
-              <RiCheckboxCircleFill fontSize={12} color="#ff5147" />
+              <RiCheckboxCircleFill
+                className="shrink-0"
+                fontSize={12}
+                color="#ff5147"
+              />
             </li>
             <li className="flex justify-between items-center p-4 py-1">
-              <span>Business & Operational Audit</span>
-              <RiCheckboxCircleFill fontSize={12} color="#ff5147" />
+              <span>Initial Meeting</span>
+              <RiCheckboxCircleFill
+                className="shrink-0"
+                fontSize={12}
+                color="#ff5147"
+              />
             </li>
             <li className="flex justify-between items-center p-4 py-1">
-              <span>System Architecture Planning</span>
-              <RiCheckboxCircleFill fontSize={12} color="#ff5147" />
+              <span>Discovery Meeting</span>
+              <RiCheckboxCircleFill
+                className="shrink-0"
+                fontSize={12}
+                color="#ff5147"
+              />
             </li>
             <li className="flex justify-between items-center p-4 py-1">
-              <span>Workflow & Process Mapping</span>
-              <RiCheckboxBlankCircleLine fontSize={12} />
+              <span>Agreement</span>
+              <RiCheckboxBlankCircleLine className="shrink-0" fontSize={12} />
             </li>
             <li className="flex justify-between items-center p-4 py-1">
-              <span>Scalability Strategy</span>
-              <RiCheckboxBlankCircleLine fontSize={12} />
+              <span>Kick-off</span>
+              <RiCheckboxBlankCircleLine className="shrink-0" fontSize={12} />
             </li>
             <li className="flex justify-between items-center p-4 py-1">
-              <span>Implementation Roadmap</span>
-              <RiCheckboxBlankCircleLine fontSize={12} />
+              <span>Deployment & Support</span>
+              <RiCheckboxBlankCircleLine className="shrink-0" fontSize={12} />
             </li>
           </ul>
           <div className="md:order-1 lg:flex flex-col justify-between">
