@@ -128,9 +128,7 @@ export default function Services() {
         </div>
         <div className="p-6 bg-[#151619] rounded-[32px] h-[230px] md:h-auto flex flex-col justify-end service-accent relative overflow-hidden md:order-[5] md:col-span-full lg:col-span-1">
           <div className="text-xl lg:text-2xl">
-            <div className="text-white font-bold">
-              World-Class Applications,
-            </div>
+            <div className="text-white font-bold">World-Class Software,</div>
             <div className="text-white font-bold">Reliable Systems,</div>
             <div className="text-[#fff9] font-bold">Built to Scale</div>
             <a
