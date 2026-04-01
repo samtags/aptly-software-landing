@@ -22,7 +22,8 @@ export default function Hero() {
         Power your business with systems that scale
       </h1>
       <p className="px-4 text-center text-sm lg:text-base font-medium text-[#323745] mb-9 md:max-w-[530px] md:mx-auto">
-        We turn manual processes into reliable systems your business can run on every day
+        We turn manual processes into reliable systems your business can run,
+        manage, and scale every day
       </p>
       <div className="flex flex-col md:flex-row md:justify-center px-4 gap-3">
         <a
