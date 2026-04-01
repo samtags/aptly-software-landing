@@ -41,20 +41,18 @@ export default function Testimonies() {
         <TestimonyCard
           body='"Aptly built an offline-capable system that syncs reliably and validates tickets instantly. During live events, it performs fast and consistently without breaking under pressure"'
           imageUrl="/png/TGbM5VpvWt795kur8Wf2anMLlhk.png"
-          name="Developer"
+          name="Software Engineer"
           company="Tickets PH"
           theme="dark"
           className="md:col-span-1"
         />
         <TestimonyCard
-          body='""We needed infrastructure that could handle peak traffic during major ticket launches without downtime. Aptly engineered the platform for scale and reliability from day one. The system has remained stable during high-demand releases, giving us full confidence in our operations."'
+          body='"We needed infrastructure that could handle peak traffic during major ticket launches without downtime. Aptly engineered the platform for scale and reliability from day one. The system has remained stable during high-demand releases, giving us full confidence in our operations."'
           imageUrl="/png/YlbsDACEKLniAdZ2B90nBFRBt14.png"
           name="CTO"
           company="Tickets PH"
           className="md:col-span-full lg:col-span-1"
         />
-      
-        
       </div>
     </section>
   );
