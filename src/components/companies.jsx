@@ -3,7 +3,7 @@ export default function Companies({ showHeader = true }) {
     <section className="mt-8">
       {showHeader && (
         <header className="uppercase text-[#697289] text-xs font-bold text-center">
-          Trusted by top companies
+          Tools
         </header>
       )}
       <div className="flex justify-center">

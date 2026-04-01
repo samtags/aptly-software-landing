@@ -10,11 +10,10 @@ export default function Footer() {
       <div className="text-center">
         <SectionTitle className="text-white!">Book a call</SectionTitle>
         <div className="text-[28px] font-bold mt-4">
-          Join 1500+ professionals elevating their brand
+          Build What Your Business Actually Needs
         </div>
         <p className="mt-4 text-sm text-[#fff9] font-medium">
-          Schedule a free discovery call with us to talk strategy, goals, and
-          how we can help you grow.
+          Schedule a free discovery call with us to talk strategy, goals, and how we can help you grow.
         </p>
       </div>
       <div className="mb-8">
@@ -22,7 +21,7 @@ export default function Footer() {
       </div>
       <div className="flex justify-center pb-8">
         <button className="flex justify-center items-center gap-3 bg-white text-sm font-medium px-2 py-3 pl-6 rounded-full border border-[#d2dae4] text-[#323745]">
-          Book an intro call
+          Schedule a call
           <div className="bg-[#f3f5f6] p-2 rounded-full">
             <HiArrowUpRight strokeWidth={1} fontSize={12} />
           </div>
@@ -54,8 +53,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-[#fff9] font-medium text-[14px]">
-            Strategic web design, and campaigns tailored to drive result and
-            conversions.
+            Strategic planning and execution tailored to drive measurable business value..
           </p>
         </div>
         <ul className="flex flex-col gap-3 text-[#fff9] font-medium text-sm col-span-3 md:col-span-1">
@@ -63,7 +61,7 @@ export default function Footer() {
           <li>About Us</li>
           <li>Pricing</li>
           <li>Contact Us</li>
-          <li>Projects</li>
+          <li>Project</li>
         </ul>
         <ul className="flex flex-col gap-3 text-[#fff9] font-medium text-sm col-span-3 md:col-span-2 lg:col-span-1">
           <li className="text-white font-bold">Socials</li>
@@ -74,8 +72,7 @@ export default function Footer() {
         <div className="col-span-full md:col-span-3 lg:col-span-2">
           <div className="text-white font-bold">News Letter</div>
           <p className="text-[#fff9] font-medium text-[14px] max-w-[260px]">
-            Stay ahead with design & marketing tips and strategies that drive
-            results.
+            Stay ahead with design & marketing tips and strategies that drive results.
           </p>
 
           <div className="bg-[#25272c] rounded-full flex items-center gap-2 p-2 pl-4 mt-3 md:mt-8">
@@ -84,7 +81,7 @@ export default function Footer() {
             </span>
             <input
               className="text-sm font-medium grow outline-none"
-              placeholder="Enter your E-mail"
+              placeholder="Enter E-mail address"
             />
             <div>
               <button className="text-white bg-[#ff5147] rounded-full px-6 py-3">
