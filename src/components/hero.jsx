@@ -19,11 +19,11 @@ export default function Hero() {
         </div>
       </div>
       <h1 className="text-[32px] md:text-[40px] lg:text-[48px] font-bold leading-10 md:leading-11 lg:leading-18 text-center px-12 mt-4 md:mt-8 lg:mt-7 mb-6 lg:mb-6 tracking-tight md:max-w-[580px] lg:max-w-[720px] md:mx-auto">
-        Modern problems require modern solutions
+        Power your business with systems that scale
       </h1>
       <p className="px-4 text-center text-sm lg:text-base font-medium text-[#323745] mb-9 md:max-w-[530px] md:mx-auto">
-        We design, build, and operate modern applications that solve real-world
-        problems for businesses and consumers.
+        We turn manual processes into reliable systems your business can run,
+        manage, and scale every day
       </p>
       <div className="flex flex-col md:flex-row md:justify-center px-4 gap-3">
         <a
