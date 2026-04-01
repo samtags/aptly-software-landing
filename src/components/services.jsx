@@ -117,7 +117,7 @@ export default function Services() {
           <div className="text-xl lg:text-2xl">
             <div className="text-white font-bold">World-Class Applications,</div>
             <div className="text-white font-bold">Reliable Systems,</div>
-            <div className="text-[#fff9] font-bold">UBuilt to Scale</div>
+            <div className="text-[#fff9] font-bold">Built to Scale</div>
             <button className="flex justify-center items-center gap-3 bg-white text-sm font-medium pl-4 py-1 pr-1 rounded-full border border-[#d2dae4] text-[#323745] mt-5">
               Book call now
               <div className="bg-[#f3f5f6] p-2 rounded-full">
