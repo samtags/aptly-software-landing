@@ -13,7 +13,8 @@ export default function Footer() {
           Build What Your Business Actually Needs
         </div>
         <p className="mt-4 text-sm text-[#fff9] font-medium">
-          Schedule a free discovery call with us to talk strategy, goals, and how we can help you grow.
+          Schedule a free discovery call with us to talk strategy, goals, and
+          how we can help you grow.
         </p>
       </div>
       <div className="mb-8">
@@ -27,7 +28,10 @@ export default function Footer() {
           </div>
         </button>
       </div>
-      <svg className="footer-wordmark-svg" viewBox="0 0 1135.905190075325 324">
+      <svg
+        className="footer-wordmark-svg mx-auto max-w-[1100px]"
+        viewBox="0 0 1135.905190075325 324"
+      >
         <foreignObject
           width="100%"
           height="100%"
@@ -53,7 +57,8 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-[#fff9] font-medium text-[14px]">
-            Strategic planning and execution tailored to drive measurable business value..
+            Strategic planning and execution tailored to drive measurable
+            business value..
           </p>
         </div>
         <ul className="flex flex-col gap-3 text-[#fff9] font-medium text-sm col-span-3 md:col-span-1">
@@ -72,7 +77,8 @@ export default function Footer() {
         <div className="col-span-full md:col-span-3 lg:col-span-2">
           <div className="text-white font-bold">News Letter</div>
           <p className="text-[#fff9] font-medium text-[14px] max-w-[260px]">
-            Stay ahead with design & marketing tips and strategies that drive results.
+            Stay ahead with design & marketing tips and strategies that drive
+            results.
           </p>
 
           <div className="bg-[#25272c] rounded-full flex items-center gap-2 p-2 pl-4 mt-3 md:mt-8">
