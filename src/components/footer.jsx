@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="text-center">
         <SectionTitle className="text-white!">Book a call</SectionTitle>
         <div className="text-[28px] font-bold mt-4">
-          Join 1500+ professionals elevating their brand
+          Build What Your Business Actually Needs
         </div>
         <p className="mt-4 text-sm text-[#fff9] font-medium">
           Schedule a free discovery call with us to talk strategy, goals, and
@@ -22,13 +22,16 @@ export default function Footer() {
       </div>
       <div className="flex justify-center pb-8">
         <button className="flex justify-center items-center gap-3 bg-white text-sm font-medium px-2 py-3 pl-6 rounded-full border border-[#d2dae4] text-[#323745]">
-          Book an intro call
+          Schedule a call
           <div className="bg-[#f3f5f6] p-2 rounded-full">
             <HiArrowUpRight strokeWidth={1} fontSize={12} />
           </div>
         </button>
       </div>
-      <svg className="footer-wordmark-svg" viewBox="0 0 1135.905190075325 324">
+      <svg
+        className="footer-wordmark-svg mx-auto max-w-[1100px]"
+        viewBox="0 0 1135.905190075325 324"
+      >
         <foreignObject
           width="100%"
           height="100%"
@@ -54,8 +57,8 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-[#fff9] font-medium text-[14px]">
-            Strategic web design, and campaigns tailored to drive result and
-            conversions.
+            Strategic planning and execution tailored to drive measurable
+            business value..
           </p>
         </div>
         <ul className="flex flex-col gap-3 text-[#fff9] font-medium text-sm col-span-3 md:col-span-1">
@@ -63,7 +66,7 @@ export default function Footer() {
           <li>About Us</li>
           <li>Pricing</li>
           <li>Contact Us</li>
-          <li>Projects</li>
+          <li>Project</li>
         </ul>
         <ul className="flex flex-col gap-3 text-[#fff9] font-medium text-sm col-span-3 md:col-span-2 lg:col-span-1">
           <li className="text-white font-bold">Socials</li>
@@ -84,7 +87,7 @@ export default function Footer() {
             </span>
             <input
               className="text-sm font-medium grow outline-none"
-              placeholder="Enter your E-mail"
+              placeholder="Enter E-mail address"
             />
             <div>
               <button className="text-white bg-[#ff5147] rounded-full px-6 py-3">
