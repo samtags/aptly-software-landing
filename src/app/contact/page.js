@@ -1,5 +1,6 @@
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
+import FAQs from "../../components/faqs";
 
 export default function Contact() {
   return (
@@ -35,10 +36,10 @@ export default function Contact() {
               {/* BOTTOM */}
               <div className="flex flex-col gap-3">
                 <p className="text-[15px] font-semibold text-[#111]">
-                  (510) 895-6500
+                  {/* (510) 895-6500 */}
                 </p>
                 <p className="text-[21px] font-bold text-[#111] tracking-[-0.02em]">
-                  hello@bravio.com
+                  mail.aptly@gmail.com
                 </p>
                 <p className="text-[12px] text-[#999] leading-relaxed">
                   Reach out to us via email or give us a call, we are happy to
@@ -273,6 +274,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      <FAQs />
       <Footer />
     </div>
   );
