@@ -26,28 +26,28 @@ export default function Works() {
       </div>
       <div className="flex flex-col pt-[40px] gap-[20px] md:grid md:grid-cols-2">
         <Project
-          title="Vertax Labs (1)"
-          tags={["Web design", "Development"]}
+          title="Elite-V"
+          tags={["Landing Page", "Primer"]}
           imageUrl="/png/YRBacVkY1hNjQzvJVDb24A3JOM.png"
           redirectUrl="#"
         />
         <Project
-          title="Vertax Labs (2)"
-          tags={["Web design", "Development"]}
+          title="PasaHero"
+          tags={["Mobile Development", "Plus"]}
           imageUrl="/png/LWaKedMy6DtEAbrBCG2JzD13Tc.png"
-          redirectUrl="#"
+          redirectUrl="https://play.google.com/store/apps/details?id=com.pasahero.passenger&hl=en"
         />
         <Project
-          title="Vertax Labs (3)"
-          tags={["Web design", "Development"]}
+          title="TicketsPH"
+          tags={["App Development", "Pro"]}
           imageUrl="/png/GSJQypQMYu1yzL9SeVvdATXD6tY.png"
-          redirectUrl="#"
+          redirectUrl="[https://www.ticketsph.net/en/](https://www.ticketsph.net/en/)"
         />
         <Project
-          title="Vertax Labs (1)"
-          tags={["Web design", "Development"]}
+          title="Brook"
+          tags={["MVP Development", "Plus"]}
           imageUrl="/png/YRBacVkY1hNjQzvJVDb24A3JOM.png"
-          redirectUrl="#"
+          redirectUrl="[https://docs.aptly.cloud](https://docs.aptly.cloud)"
         />
       </div>
     </section>
