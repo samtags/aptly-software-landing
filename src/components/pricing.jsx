@@ -48,10 +48,10 @@ export default function Pricing() {
           className="md:col-span-1 lg:col-span-3"
           rateDescription="Increased conversation rate by 400%"
           rateDescriptionClassName="text-[#1b1e21]!"
-          body="“We needed a high-converting website, and Bravio delivered. Their expertise helped us increase conversion rate by 400%”"
+          body="“We needed a landing page that clearly communicated our value and converted visitors effectively. Aptly delivered a fast, modern, and structured experience that improved clarity and engagement immediately after launch.”"
           imageUrl="/png/YlbsDACEKLniAdZ2B90nBFRBt14.png"
-          name="Danielle Reyes"
-          company="Founder, Ember & Co"
+          name="Elite-V"
+
           hideQouteIcon
         />
       </div>
