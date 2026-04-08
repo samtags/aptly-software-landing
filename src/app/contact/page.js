@@ -48,7 +48,9 @@ export default function Contact() {
 
                 <div className="flex flex-col gap-[10px] mt-3">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/share/1HAjDwa3mw/?mibextid=wwXIfrhttps://www.facebook.com/share/1HAjDwa3mw/?mibextid=wwXIfr"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-[7px] text-[13px] text-[#111] hover:text-[#c0392b] transition-colors w-fit"
                   >
                     <svg
@@ -64,7 +66,9 @@ export default function Contact() {
                     Facebook
                   </a>
                   <a
-                    href="#"
+                    href="https://www.tiktok.com/@aptly.software?_r=1&_t=ZS-95KUtmwdYE0"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-[7px] text-[13px] text-[#111] hover:text-[#c0392b] transition-colors w-fit"
                   >
                     <svg
@@ -77,10 +81,12 @@ export default function Contact() {
                     >
                       <path d="M2 12L12 2M12 2H5M12 2v7" />
                     </svg>
-                    Instagram
+                    TikTok
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/company/aptly-software-development-services"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-[7px] text-[13px] text-[#111] hover:text-[#c0392b] transition-colors w-fit"
                   >
                     <svg
