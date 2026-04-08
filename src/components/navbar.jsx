@@ -27,7 +27,9 @@ export default function Navbar() {
             <li className="p-2">
               <a href="/#pricing">Pricing</a>
             </li>
-            <li className="p-2">Contact</li>
+            <li className="p-2">
+              <a href="/contact">Contact</a>
+            </li>
             <li className="p-2 flex gap-2 items-center">
               Projects
               <div className="bg-[#f3f5f6] rounded-full bg-[#ffffff29] px-2 py-[2px] text-white text-xs">
