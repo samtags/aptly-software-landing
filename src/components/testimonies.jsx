@@ -3,7 +3,10 @@ import SectionTitle from "./sectionTitle";
 
 export default function Testimonies() {
   return (
-    <section className="pt-[96px] px-5 max-w-[1100px] mx-auto">
+    <section
+      id="testimonials"
+      className="pt-[96px] px-5 max-w-[1100px] mx-auto"
+    >
       <div className="text-center">
         <SectionTitle>Testimonials</SectionTitle>
       </div>

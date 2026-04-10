@@ -4,37 +4,40 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { FaStarOfLife } from "react-icons/fa6";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { RxChevronDown } from "react-icons/rx";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
     <>
       <div className="py-2 px-4 lg:mx-auto lg:max-w-[800px]">
         <nav className="bg-[#25272c] p-2 lg:pl-4 rounded-[32px] flex items-center justify-between">
-          <div className="flex gap-2">
-            <div className=" w-8 h-8  flex justify-center items-center">
-              <img src="/png/aptly-official.png" alt="Aptly Software" className="w-8 h-8 rounded-full" />
+          <Link href="/" className="flex gap-2">
+            <div className="bg-white w-8 h-8 rounded-full flex justify-center items-center">
+              <FaStarOfLife fontSize={14} />
             </div>
             <span className="font-black text-white text-xl">
               Apt<span className="text-[#DD5240]">ly</span>
             </span>
-          </div>
+          </Link>
           <ul className="hidden lg:flex text-[#fffc] text-[14px] font-medium gap-2">
-            <li className="p-2">About</li>
-            <li className="p-2 flex gap-2 items-center">
+            <li className="p-2">
+              <Link href="/#testimonials">About</Link>
+            </li>
+            {/* <li className="p-2 flex gap-2 items-center">
               Company
               <RxChevronDown />
+            </li> */}
+            <li className="p-2">
+              <Link href="/#pricing">Pricing</Link>
             </li>
             <li className="p-2">
-              <a href="/#pricing">Pricing</a>
-            </li>
-            <li className="p-2">
-              <a href="/contact">Contact</a>
+              <Link href="/contact">Contact</Link>
             </li>
             <li className="p-2 flex gap-2 items-center">
-              Projects
-              <div className="bg-[#f3f5f6] rounded-full bg-[#ffffff29] px-2 py-[2px] text-white text-xs">
+              <Link href="/#projectHistory">Projects</Link>
+              {/* <div className="bg-[#f3f5f6] rounded-full bg-[#ffffff29] px-2 py-[2px] text-white text-xs">
                 New
-              </div>
+              </div> */}
             </li>
           </ul>
           <button

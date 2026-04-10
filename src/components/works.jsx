@@ -4,7 +4,10 @@ import { HiArrowUpRight } from "react-icons/hi2";
 
 export default function Works() {
   return (
-    <section className="pt-[96px] px-5 max-w-[1100px] mx-auto">
+    <section
+      id="projectHistory"
+      className="pt-[96px] px-5 max-w-[1100px] mx-auto"
+    >
       <SectionTitle>Our work</SectionTitle>
       <SectionHeader
         main="How we've helped other businesses."
@@ -64,7 +67,7 @@ function Project({ title, tags, imageUrl, redirectUrl }) {
             alt={`Project ${title}`}
             className="w-full h-full object-cover"
           />
-          </a>
+        </a>
       </div>
       <div className="p-4 pb-3">
         <div className="flex justify-between">
