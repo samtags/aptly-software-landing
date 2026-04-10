@@ -12,7 +12,7 @@ export default function SectionTitle({ children, className }) {
           d="M 1 1 L 9.5 1 C 10.328 1 11 1.672 11 2.5 L 11 11"
           fill="transparent"
           strokeWidth="2"
-          stroke="var(--token-72f1587e-8bbc-424b-bdb9-13d999bb0e54, rgb(255, 81, 71))"
+          stroke="var(--token-72f1587e-8bbc-424b-bdb9-13d999bb0e54, rgb(221, 82, 64))"
           strokeLinecap="round"
           strokeLinejoin="round"
         ></path>
@@ -28,7 +28,7 @@ export default function SectionTitle({ children, className }) {
           transform="translate(1 1) rotate(180 5 5)"
           fill="transparent"
           strokeWidth="2"
-          stroke="var(--token-72f1587e-8bbc-424b-bdb9-13d999bb0e54, rgb(255, 81, 71))"
+          stroke="var(--token-72f1587e-8bbc-424b-bdb9-13d999bb0e54, rgb(221, 82, 64))"
           strokeLinecap="round"
           strokeLinejoin="round"
         ></path>
