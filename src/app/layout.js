@@ -17,7 +17,7 @@ export const metadata = {
   title: "Aptly Software",
   description: "Product-focused software studio landing page.",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/png/aptly-official.png",
   },
 };
 

@@ -11,11 +11,11 @@ export default function Navbar() {
       <div className="py-2 px-4 lg:mx-auto lg:max-w-[800px]">
         <nav className="bg-[#25272c] p-2 lg:pl-4 rounded-[32px] flex items-center justify-between">
           <div className="flex gap-2">
-            <div className="bg-white w-8 h-8 rounded-full flex justify-center items-center">
-              <FaStarOfLife fontSize={14} />
+            <div className=" w-8 h-8  flex justify-center items-center">
+              <img src="/png/aptly-official.png" alt="Aptly Software" className="w-8 h-8 rounded-full" />
             </div>
             <span className="font-black text-white text-xl">
-              Apt<span className="text-[#E07766]">ly</span>
+              Apt<span className="text-[#DD5240]">ly</span>
             </span>
           </div>
           <ul className="hidden lg:flex text-[#fffc] text-[14px] font-medium gap-2">
