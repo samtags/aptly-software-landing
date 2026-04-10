@@ -102,7 +102,7 @@ export function TestimonyCard({
               width="100%"
               height="100%"
               viewBox="0 0 24 24"
-              fill="var(--token-72f1587e-8bbc-424b-bdb9-13d999bb0e54, rgb(255, 81, 71))"
+              fill="var(--token-72f1587e-8bbc-424b-bdb9-13d999bb0e54, rgb(221, 82, 64))"
               className="w-[24px] h-[24px] icon icon-tabler icons-tabler-filled icon-tabler-quote"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>{" "}
