@@ -1,15 +1,19 @@
 import SectionHeader from "./sectionHeader";
 import SectionTitle from "./sectionTitle";
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import { LuFileCode } from "react-icons/lu";
 import { AiOutlineFire } from "react-icons/ai";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { TestimonyCard } from "./testimonies";
+import { PiLayoutDuotone } from "react-icons/pi";
+import { PiTargetDuotone } from "react-icons/pi";
+import { PiRocketLaunchDuotone } from "react-icons/pi";
+
 
 const plans = [
   {
+    icon: <PiLayoutDuotone className="text-[30px] text-[#000000] background-none" />,
     title: "Primer",
-    badge: { label: "New", icon: null },
+    badge: null,
     description: "Best for early-stage startups building an MVP or small internal tools",
     price: "₱49,999 ",
     priceLabel: "/ Sprint",
@@ -24,6 +28,7 @@ const plans = [
     className: "md:grid-col-span-1 lg:col-span-2",
   },
   {
+    icon: <PiTargetDuotone  className="text-[30px] text-[#000000]" />,
     title: "Plus",
     badge: { label: "Popular", icon: "fire" },
     description: "Tailored for businesses with existing systems that needs to scale",
@@ -40,6 +45,7 @@ const plans = [
     className: "md:grid-col-span-1 lg:col-span-2",
   },
   {
+    icon: <PiRocketLaunchDuotone className="text-[30px] text-[#ffffff]" />,
     title: "Pro",
     badge: null,
     description: "Tailored digital experiences built for unique business needs.",
@@ -123,12 +129,12 @@ function Feature({ children, color = "#ff5147" }) {
   );
 }
 
-function PriceCard({ theme, className, title, badge, description, price, priceLabel, features = [] }) {
+function PriceCard({ theme, className, icon, title, badge, description, price, priceLabel, features = [] }) {
   const isDark = theme === "dark";
   return (
     <div className={`bg-white rounded-[32px] p-7 service-card-shadow ${className} ${isDark && "bg-[#151619]! text-white!"}`}>
-      <div className="w-[44px] h-[44px] flex items-center justify-center rounded-[10px] bg-[#f9fafb]">
-        <LuFileCode className="text-[20px] text-[#50576b]" />
+      <div className="w-[44px] h-[44px] flex items-center justify-center">
+        {icon}
       </div>
       <div className="font-bold text-[20px] lg:text-[26px] mt-6 flex items-center gap-2">
         {title}
