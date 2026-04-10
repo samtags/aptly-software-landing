@@ -19,25 +19,25 @@ export default function Navbar() {
               Apt<span className="text-[#DD5240]">ly</span>
             </span>
           </Link>
-          <ul className="hidden lg:flex text-[#fffc] text-[14px] font-medium gap-2">
-            <li className="p-2">
+          <ul className="hidden lg:flex text-[#fffc] text-[14px] font-medium">
+            <li className="p-2 px-4 rounded-full hover:bg-[#F1F2F414] transition-all duration-300">
               <Link href="/#testimonials">About</Link>
             </li>
-            {/* <li className="p-2 flex gap-2 items-center">
+            <li className="p-2 flex gap-2 items-center px-4 rounded-full hover:bg-[#F1F2F414] transition-all duration-300">
               Company
               <RxChevronDown />
-            </li> */}
-            <li className="p-2">
+            </li>
+            <li className="p-2 px-4 rounded-full hover:bg-[#F1F2F414] transition-all duration-300">
               <Link href="/#pricing">Pricing</Link>
             </li>
-            <li className="p-2">
+            <li className="p-2 px-4 rounded-full hover:bg-[#F1F2F414] transition-all duration-300">
               <Link href="/contact">Contact</Link>
             </li>
-            <li className="p-2 flex gap-2 items-center">
+            <li className="p-2 flex gap-2 items-center px-4 rounded-full hover:bg-[#F1F2F414] transition-all duration-300">
               <Link href="/#projectHistory">Projects</Link>
-              {/* <div className="bg-[#f3f5f6] rounded-full bg-[#ffffff29] px-2 py-[2px] text-white text-xs">
+              <div className="bg-[#f3f5f6] rounded-full bg-[#ffffff29] px-2 py-[2px] text-white text-xs">
                 New
-              </div> */}
+              </div>
             </li>
           </ul>
           <button

@@ -9,10 +9,10 @@ export default function Footer() {
     <footer className="m-5 bg-[#151619] rounded-[52px] pt-[64px] pb-[40px] px-5 text-white">
       <div className="text-center">
         <SectionTitle className="text-white!">Book a call</SectionTitle>
-        <div className="text-[28px] font-bold mt-4">
+        <div className="text-4xl font-bold mt-4 max-w-[480px] mx-auto">
           Build What Your Business Actually Needs
         </div>
-        <p className="mt-4 text-sm text-[#fff9] font-medium">
+        <p className="mt-4 text-[#fff9] font-medium max-w-[360px] mx-auto">
           Schedule a free discovery call with us to talk strategy, goals, and
           how we can help you grow.
         </p>
@@ -56,9 +56,9 @@ export default function Footer() {
               Apt<span className="text-[#E07766]">ly</span>
             </span>
           </div>
-          <p className="text-[#fff9] font-medium text-[14px]">
-            Strategic planning and execution tailored to drive measurable
-            business value..
+          <p className="text-[#fff9] font-medium text-[14px] mt-4">
+            Turn manual processes into reliable systems your business can run,
+            manage, and scale every day
           </p>
         </div>
         <ul className="flex flex-col gap-3 text-[#fff9] font-medium text-sm col-span-3 md:col-span-1">
@@ -77,8 +77,7 @@ export default function Footer() {
         <div className="col-span-full md:col-span-3 lg:col-span-2">
           <div className="text-white font-bold">News Letter</div>
           <p className="text-[#fff9] font-medium text-[14px] max-w-[260px]">
-            Stay ahead with design & marketing tips and strategies that drive
-            results.
+            Stay ahead with systems tips and strategies that drive results.
           </p>
 
           <div className="bg-[#25272c] rounded-full flex items-center gap-2 p-2 pl-4 mt-3 md:mt-8">

@@ -59,9 +59,9 @@ export default function Services() {
           </div>
         </div>
         <div className="bg-white rounded-[32px] p-7 service-card-shadow flex flex-col lg:flex-row gap-12 md:order-[3] lg:col-span-2 lg:row-span-1">
-          <ul className="border border-[#e5eaf0] flex flex-col gap-1 rounded-[18px] services-bottom-fade p-[6px] font-medium text-sm lg:text-xs md:order-2 lg:w-[400px]">
+          <ul className="border border-[#e5eaf0] flex flex-col gap-1 rounded-[18px] services-bottom-fade p-[6px] font-medium text-sm lg:text-xs md:order-2 lg:w-[650px]">
             <li className="flex justify-between items-center px-4 py-3 bg-[#f9fafb] rounded-xl">
-              <span>Problem Discovery</span>
+              <span>Client Request</span>
               <RiCheckboxCircleFill
                 className="shrink-0"
                 fontSize={12}
@@ -77,7 +77,7 @@ export default function Services() {
               />
             </li>
             <li className="flex justify-between items-center p-4 py-1">
-              <span>Discovery Meeting</span>
+              <span>Discovery</span>
               <RiCheckboxCircleFill
                 className="shrink-0"
                 fontSize={12}
@@ -86,10 +86,14 @@ export default function Services() {
             </li>
             <li className="flex justify-between items-center p-4 py-1">
               <span>Agreement</span>
-              <RiCheckboxBlankCircleLine className="shrink-0" fontSize={12} />
+              <RiCheckboxCircleFill
+                className="shrink-0"
+                fontSize={12}
+                color="#ff5147"
+              />
             </li>
             <li className="flex justify-between items-center p-4 py-1">
-              <span>Kick-off</span>
+              <span>Development Kick-off</span>
               <RiCheckboxBlankCircleLine className="shrink-0" fontSize={12} />
             </li>
             <li className="flex justify-between items-center p-4 py-1">
