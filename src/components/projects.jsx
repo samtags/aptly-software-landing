@@ -21,42 +21,48 @@ export default function Projects() {
             description="Landing Page • Primer"
             rate="150%"
             rateDescription="Lead conversion rate"
-            imageUrl="/png/YRBacVkY1hNjQzvJVDb24A3JOM.png"
+            imageUrl="/png/elite-thumbnail.png"
+            link="https://elitev.vercel.app/"
           />
           <Carousel
             title="Pasahero"
             description="Mobile Development • Plus"
             rate="120%"
             rateDescription="Boost in leads"
-            imageUrl="/png/LWaKedMy6DtEAbrBCG2JzD13Tc.png"
+            imageUrl="/png/pasahero-thumbnail.png"
+            link="https://play.google.com/store/apps/details?id=com.pasahero.passenger&hl=en&pli=1"
           />
           <Carousel
             title="TicketsPH"
             description="App Development • Pro"
             rate="120%"
             rateDescription="Boost in leads"
-            imageUrl="/png/GSJQypQMYu1yzL9SeVvdATXD6tY.png"
+            imageUrl="/png/ticketsph-thumbnail.png"
+            link="https://www.ticketsph.net/en/"
           />
           <Carousel
             title="Elite-V"
             description="Landing Page • Primer"
             rate="150%"
             rateDescription="Lead conversion rate"
-            imageUrl="/png/YRBacVkY1hNjQzvJVDb24A3JOM.png"
+            imageUrl="/png/elite-thumbnail.png"
+            link="https://elitev.vercel.app/"
           />
           <Carousel
             title="Pasahero"
             description="Mobile Development • Plus"
             rate="120%"
             rateDescription="Boost in leads"
-            imageUrl="/png/LWaKedMy6DtEAbrBCG2JzD13Tc.png"
+            imageUrl="/png/pasahero-thumbnail.png"
+            link="https://play.google.com/store/apps/details?id=com.pasahero.passenger&hl=en&pli=1"
           />
           <Carousel
             title="TicketsPH"
             description="App Development • Pro"
             rate="120%"
             rateDescription="Boost in leads"
-            imageUrl="/png/GSJQypQMYu1yzL9SeVvdATXD6tY.png"
+            imageUrl="/png/ticketsph-thumbnail.png"
+            link="https://www.ticketsph.net/en/"
           />
         </FramerDiv>
       </div>
