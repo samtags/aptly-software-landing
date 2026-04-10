@@ -59,7 +59,7 @@ function Step({ step, title, description, showLine = true }) {
           {step}
         </div>
         {showLine && (
-          <div className="bg-[#ff5147] w-[3px] h-full absolute top-20" />
+          <div className="bg-[#DD5240] w-[3px] h-full absolute top-20" />
         )}
       </div>
       <div className="relative p-6 w-full">
