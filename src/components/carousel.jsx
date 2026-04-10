@@ -1,19 +1,24 @@
+import { a } from "framer-motion/client";
+
 export default function Carousel({
   imageUrl,
   title,
   description,
   rate,
   rateDescription,
+  link,
 }) {
   return (
     <div className="bg-white rounded-[40px] border border-[#e2e7ee] p-[10px] max-w-[300px] md:max-w-none md:min-w-[450px] lg:min-w-[550px]">
       <div className="bg-gray-100 min-w-[200px] md:min-w-[430px] lg:min-w-[530px] w-full min-h-[187px] md:min-h-[287px] lg:min-h-[353px] aspect-video aspect-video rounded rounded-[32px] overflow-hidden">
         {imageUrl && (
+          <a href={link} target="__blank">
           <img
             src={imageUrl}
             alt={title}
             className="w-full h-full object-cover"
           />
+          </a>
         )}
       </div>
       <div className="p-6">
