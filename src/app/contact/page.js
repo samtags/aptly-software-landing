@@ -8,6 +8,7 @@ import {
   LuBuilding2,
   LuDollarSign,
   LuMessageSquare,
+  LuPhone,
   LuUser,
   LuWallet,
   LuWalletCards,
@@ -121,7 +122,7 @@ export default function Contact() {
               <LuUser className="absolute left-5 top-1/2 -translate-y-1/2 text-[#bbb] pointer-events-none flex" />
               <input
                 type="text"
-                placeholder="Name"
+                placeholder="How may I address you?"
                 className="w-full bg-white border border-[#dddbd7] rounded-full py-4 pl-12 pr-8 outline-none focus:border-[#DD5240] font-medium text-sm transition-colors appearance-none"
               />
             </div>
@@ -132,7 +133,7 @@ export default function Contact() {
               <LuAtSign className="absolute left-5 top-1/2 -translate-y-1/2 text-[#bbb] pointer-events-none flex" />
               <input
                 type="email"
-                placeholder="Email"
+                placeholder="What is your email address?"
                 className="w-full bg-white border border-[#dddbd7] rounded-full py-4 pl-12 pr-8 outline-none focus:border-[#DD5240] font-medium text-sm transition-colors appearance-none"
               />
             </div>
@@ -149,13 +150,23 @@ export default function Contact() {
               </div>
 
               <div className="relative flex-1">
-                <LuBuilding2 className="absolute left-5 top-1/2 -translate-y-1/2 text-[#bbb] pointer-events-none flex" />
+                <LuPhone className="absolute left-5 top-1/2 -translate-y-1/2 text-[#bbb] pointer-events-none flex" />
                 <input
                   type="tel"
                   placeholder="Phone number"
                   className="w-full bg-white border border-[#dddbd7] rounded-full py-4 pl-12 pr-8 outline-none focus:border-[#DD5240] font-medium text-sm transition-colors appearance-none"
                 />
               </div>
+            </div>
+
+            <div className="relative">
+              <LuMessageSquare className="absolute left-5 top-5 text-[#bbb] pointer-events-none flex" />
+
+              <textarea
+                placeholder="Let us know how can we help you?"
+                rows={6}
+                className="w-full bg-white border border-[#dddbd7] rounded-[18px] py-4 pl-12 pr-8 outline-none focus:border-[#DD5240] font-medium text-sm transition-colors appearance-none"
+              />
             </div>
 
             {/* Budget */}
@@ -166,12 +177,13 @@ export default function Contact() {
                 className="w-full bg-white border border-[#dddbd7] rounded-full py-4 pl-12 pr-8 outline-none focus:border-[#DD5240] font-medium text-sm transition-colors appearance-none cursor-pointer has-[option:disabled:checked]:text-[#959595]"
               >
                 <option value="" disabled>
-                  Select a budget
+                  What is your budget range?
                 </option>
-                <option>$1,000 - $5,000</option>
-                <option>$5,000 - $15,000</option>
-                <option>$15,000 - $50,000</option>
-                <option>$50,000+</option>
+                <option>₱15,000 - ₱30,000</option>
+                <option>₱30,000 - ₱50,000</option>
+                <option>₱50,000 - ₱80,000</option>
+                <option>₱80,000 - ₱100,000</option>
+                <option>₱100,000+</option>
               </select>
               <span className="absolute right-4 top-1/2 -translate-y-1/2 text-[#aaa] pointer-events-none">
                 <svg
@@ -188,15 +200,6 @@ export default function Contact() {
             </div>
 
             {/* Message */}
-            <div className="relative">
-              <LuMessageSquare className="absolute left-5 top-5 text-[#bbb] pointer-events-none flex" />
-
-              <textarea
-                placeholder="What can we help you with?"
-                rows={6}
-                className="w-full bg-white border border-[#dddbd7] rounded-[18px] py-4 pl-12 pr-8 outline-none focus:border-[#DD5240] font-medium text-sm transition-colors appearance-none"
-              />
-            </div>
 
             {/* Send */}
             <button
