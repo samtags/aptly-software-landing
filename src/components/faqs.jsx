@@ -3,9 +3,9 @@ import SectionHeader from "./sectionHeader";
 import { HiArrowUpRight } from "react-icons/hi2";
 import QnA from "./QnA";
 
-export default function FAQs() {
+export default function FAQs({ cardClassName = "" }) {
   return (
-    <section className="pt-[96px] px-5 lg:grid grid-cols-12 max-w-[1100px] mx-auto lg:gap-12">
+    <section className="lg:grid grid-cols-12  lg:gap-12">
       <div className="col-span-5 flex flex-col justify-between">
         <div>
           <SectionTitle>FAQs</SectionTitle>
@@ -15,10 +15,13 @@ export default function FAQs() {
             className="mt-4 max-w-[250px] max-w-[300px]"
           />
           <p className="text-[#697289] text-[14px] md:text-[15px] font-medium mt-4 max-w-[380px]">
-           Everything you need to know about our process, and how we deliver results.
+            Everything you need to know about our process, and how we deliver
+            results.
           </p>
         </div>
-        <div className="bg-[#f9fafb] rounded-[28px] p-[28px] mt-8 max-w-[490px]">
+        <div
+          className={`bg-[#f9fafb] rounded-[28px] p-[28px] mt-8 max-w-[490px] ${cardClassName}`}
+        >
           <div className="text-[18px] font-bold">Can't find your answer?</div>
           <span className="text-[#50576b] text-sm font-medium">
             Get in touch with our support team, they are friendly!
@@ -35,6 +38,7 @@ export default function FAQs() {
       </div>
       <div className="p-4 col-span-7">
         <QnA
+          showByDefault
           question="What services do you offer?"
           answer="We specialize in web design, no-code development, paid advertising, SEO, branding, copywriting, 
           and motion design. Our goal is to help businesses grow through high-performing digital experiences."
@@ -45,17 +49,17 @@ export default function FAQs() {
           looking to scale their online presence. Our flexible approach allows us to tailor solutions that align 
           with your specific goals."
         />
-         <QnA
+        <QnA
           question="How long does a typical project take?"
           answer="Project timelines vary depending on scope. A landing page may take 1–2 weeks, while full application 
           can take 4–8 weeks. We’ll provide a detailed timeline after the initial discovery call."
         />
-         <QnA
+        <QnA
           question="Can you help with just one part of the project?"
           answer="Absolutely. we’re happy to collaborate in the way that best complements your team’s workflow. 
           We can jump in as creative partners, support your internal team, or handle everything from concept to execution."
         />
-         <QnA
+        <QnA
           question="What’s your pricing structure?"
           answer="We use a sprint-based pricing model with fixed rates per sprint, depending on the level of 
           development capacity and team allocation you need."

@@ -97,6 +97,21 @@ body::before {
   z-index: -1;
 }
 
+.contact-page .hero::before {
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    #000 0%,
+    #000 15%,
+    transparent 50%
+  );
+  mask-image: radial-gradient(
+    ellipse at center,
+    #000 0%,
+    #000 15%,
+    transparent 50%
+  );
+}
+
 .projects-fade,
 .side-fade {
   position: relative;
@@ -238,3 +253,7 @@ body::before {
   );
   color: var(--framer-text-color);
 }
+
+/* .contact-page select {
+  color: #959595;
+} */
