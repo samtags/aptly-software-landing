@@ -28,26 +28,26 @@ export default function Works() {
         <Project
           title="Elite-V"
           tags={["Landing Page", "Primer"]}
-          imageUrl="/png/YRBacVkY1hNjQzvJVDb24A3JOM.png"
-          redirectUrl="#"
+          imageUrl="/png/elite-thumbnail.png"
+          redirectUrl="https://elitev.vercel.app/"
         />
         <Project
           title="PasaHero"
           tags={["Mobile Development", "Plus"]}
-          imageUrl="/png/LWaKedMy6DtEAbrBCG2JzD13Tc.png"
+          imageUrl="/png/pasahero-thumbnail.png"
           redirectUrl="https://play.google.com/store/apps/details?id=com.pasahero.passenger&hl=en"
         />
         <Project
           title="TicketsPH"
           tags={["App Development", "Pro"]}
-          imageUrl="/png/GSJQypQMYu1yzL9SeVvdATXD6tY.png"
-          redirectUrl="[https://www.ticketsph.net/en/](https://www.ticketsph.net/en/)"
+          imageUrl="/png/ticketsph-thumbnail.png"
+          redirectUrl="https://www.ticketsph.net/en/"
         />
         <Project
           title="Brook"
           tags={["MVP Development", "Plus"]}
           imageUrl="/png/YRBacVkY1hNjQzvJVDb24A3JOM.png"
-          redirectUrl="[https://docs.aptly.cloud](https://docs.aptly.cloud)"
+          redirectUrl="https://docs.aptly.cloud"
         />
       </div>
     </section>
@@ -58,11 +58,13 @@ function Project({ title, tags, imageUrl, redirectUrl }) {
   return (
     <div className="border border-[#e5eaf0] rounded-[32px] p-[14px]">
       <div className="rounded-[18px] bg-gray-100 h-[320px] overflow-hidden">
-        <img
-          src={imageUrl}
-          alt={`Project ${title}`}
-          className="w-full h-full object-cover"
-        />
+        <a href={redirectUrl} target="__blank">
+          <img
+            src={imageUrl}
+            alt={`Project ${title}`}
+            className="w-full h-full object-cover"
+          />
+          </a>
       </div>
       <div className="p-4 pb-3">
         <div className="flex justify-between">
