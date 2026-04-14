@@ -98,6 +98,10 @@ export default function Pricing() {
               progress you can review, test, and give feedback on before the
               next cycle begins.
             </p>
+
+            <p className="mt-2 text-sm font-medium text-[#fffc]">
+              Want to know how many Sprint your project might take?
+            </p>
           </div>
           <div>
             <button className="flex justify-center items-center gap-3 bg-white text-sm font-medium pl-4 py-1 pr-1 rounded-full border border-[#d2dae4] text-[#323745] mt-5">
