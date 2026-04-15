@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Manrope, Space_Grotesk } from "next/font/google";
+import AOSInit from "../components/aosInit.jsx";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${manrope.variable} ${spaceGrotesk.variable} `}>
+        <AOSInit />
         {children}
       </body>
     </html>
