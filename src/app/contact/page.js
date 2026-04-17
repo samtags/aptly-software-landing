@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import FAQs from "../../components/faqs";
@@ -14,8 +17,32 @@ import {
   LuWalletCards,
 } from "react-icons/lu";
 import { FaPesoSign } from "react-icons/fa6";
+import CalendlyModal from "../../components/calendlyModals";
 
 export default function Contact() {
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+  const [calendlyUrl, setCalendlyUrl] = useState("");
+
+  function handleSubmit() {
+    const payload = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      company: document.getElementById("company").value,
+      phone: document.getElementById("phone").value,
+      message: document.getElementById("message").value,
+      budget: document.getElementById("budget").value,
+    };
+    if (!payload.name || !payload.email) {
+      alert("Please fill in your name and email.");
+      return;
+    }
+
+    const url = `https://calendly.com/chardcalips2/30min?name=${encodeURIComponent(payload.name)}&email=${encodeURIComponent(payload.email)}`;
+
+    setCalendlyUrl(url);
+    setIsCalendlyOpen(true);
+  }
+
   return (
     <div className="contact-page">
       <div className="sticky top-0 left-0 top-0 top-0 w-full z-10">
@@ -121,6 +148,7 @@ export default function Contact() {
             <div className="relative">
               <LuUser className="absolute left-5 top-1/2 -translate-y-1/2 text-[#bbb] pointer-events-none flex" />
               <input
+                id="name"
                 type="text"
                 placeholder="How may I address you?"
                 className="w-full bg-white border border-[#dddbd7] rounded-full py-4 pl-12 pr-8 outline-none focus:border-[#DD5240] font-medium text-sm transition-colors appearance-none"
@@ -132,6 +160,7 @@ export default function Contact() {
             <div className="relative">
               <LuAtSign className="absolute left-5 top-1/2 -translate-y-1/2 text-[#bbb] pointer-events-none flex" />
               <input
+                id="email"
                 type="email"
                 placeholder="What is your email address?"
                 className="w-full bg-white border border-[#dddbd7] rounded-full py-4 pl-12 pr-8 outline-none focus:border-[#DD5240] font-medium text-sm transition-colors appearance-none"
@@ -143,6 +172,7 @@ export default function Contact() {
               <div className="relative flex-1">
                 <LuBuilding2 className="absolute left-5 top-1/2 -translate-y-1/2 text-[#bbb] pointer-events-none flex" />
                 <input
+                  id="company"
                   type="text"
                   placeholder="Company name"
                   className="w-full bg-white border border-[#dddbd7] rounded-full py-4 pl-12 pr-8 outline-none focus:border-[#DD5240] font-medium text-sm transition-colors appearance-none"
@@ -152,6 +182,7 @@ export default function Contact() {
               <div className="relative flex-1">
                 <LuPhone className="absolute left-5 top-1/2 -translate-y-1/2 text-[#bbb] pointer-events-none flex" />
                 <input
+                  id="phone"
                   type="tel"
                   placeholder="Phone number"
                   className="w-full bg-white border border-[#dddbd7] rounded-full py-4 pl-12 pr-8 outline-none focus:border-[#DD5240] font-medium text-sm transition-colors appearance-none"
@@ -163,6 +194,7 @@ export default function Contact() {
               <LuMessageSquare className="absolute left-5 top-5 text-[#bbb] pointer-events-none flex" />
 
               <textarea
+                id="message"
                 placeholder="Let us know how can we help you?"
                 rows={6}
                 className="w-full bg-white border border-[#dddbd7] rounded-[18px] py-4 pl-12 pr-8 outline-none focus:border-[#DD5240] font-medium text-sm transition-colors appearance-none"
@@ -173,6 +205,7 @@ export default function Contact() {
             <div className="relative">
               <LuWallet className="absolute left-5 top-1/2 -translate-y-1/2 text-[#bbb] pointer-events-none flex" />
               <select
+                id="budget"
                 defaultValue=""
                 className="w-full bg-white border border-[#dddbd7] rounded-full py-4 pl-12 pr-8 outline-none focus:border-[#DD5240] font-medium text-sm transition-colors appearance-none cursor-pointer has-[option:disabled:checked]:text-[#959595]"
               >
@@ -204,6 +237,7 @@ export default function Contact() {
             {/* Send */}
             <button
               type="button"
+              onClick={handleSubmit}
               className="w-full bg-[#0f0f0f] hover:bg-[#222] text-white font-medium rounded-full py-4 flex items-center justify-center gap-2 transition-colors cursor-pointer mt-0.5"
             >
               Send Message
@@ -222,6 +256,12 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      <CalendlyModal
+        url={calendlyUrl}
+        isOpen={isCalendlyOpen}
+        onClose={() => setIsCalendlyOpen(false)}
+      />
 
       <div className="bg-[#F9FAFB] m-4 mt-16 lg:mt-38 mb-8 lg:mb-16 pb-20 rounded-[52px]">
         <div className="px-8 mx-auto max-w-[1200px] pt-10 lg:pt-24">

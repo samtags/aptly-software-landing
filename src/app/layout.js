@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Manrope, Space_Grotesk } from "next/font/google";
+import Script from "next/script";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -24,8 +25,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://assets.calendly.com/assets/external/widget.css"
+          rel="stylesheet"
+        />
+      </head>
       <body className={`${manrope.variable} ${spaceGrotesk.variable} `}>
         {children}
+        <Script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          strategy="beforeInteractive"
+        />
       </body>
     </html>
   );
