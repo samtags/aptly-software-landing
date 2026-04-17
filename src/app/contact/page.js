@@ -22,6 +22,16 @@ import CalendlyModal from "../../components/calendlyModals";
 export default function Contact() {
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
   const [calendlyUrl, setCalendlyUrl] = useState("");
+  const [formPayload, setFormPayload] = useState(null);
+
+  function clearForm() {
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("company").value = "";
+    document.getElementById("phone").value = "";
+    document.getElementById("message").value = "";
+    document.getElementById("budget").value = "";
+  }
 
   function handleSubmit() {
     const payload = {
@@ -41,6 +51,7 @@ export default function Contact() {
 
     setCalendlyUrl(url);
     setIsCalendlyOpen(true);
+    setFormPayload(payload);
   }
 
   return (
@@ -261,6 +272,8 @@ export default function Contact() {
         url={calendlyUrl}
         isOpen={isCalendlyOpen}
         onClose={() => setIsCalendlyOpen(false)}
+        onScheduled={clearForm}
+        payload={formPayload}
       />
 
       <div className="bg-[#F9FAFB] m-4 mt-16 lg:mt-38 mb-8 lg:mb-16 pb-20 rounded-[52px]">
