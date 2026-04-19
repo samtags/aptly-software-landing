@@ -46,7 +46,7 @@ export default function NavbarClient() {
                     <FaStarOfLife fontSize={14} />
                   </div>
                   <span className="font-black text-[#2D303C] text-xl">
-                    Apt<span className="text-[#E07766]">ly</span>
+                    Apt<span className="text-[#DD5240]">ly</span>
                   </span>
                 </div>
                 <button
@@ -66,7 +66,7 @@ export default function NavbarClient() {
                 <li className="p-2">Contact</li>
                 <li className="p-2 flex gap-2 items-center justify-between">
                   Projects
-                  <div className="rounded-full bg-[#2D303C] px-2 py-[2px] text-white text-xs">
+                  <div className="rounded-full bg-[#DD5240] px-2 py-[2px] text-white text-xs">
                     New
                   </div>
                 </li>

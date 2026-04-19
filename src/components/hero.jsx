@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="hero">
       <div className="flex justify-center items-center mt-13 lg:mt-23">
         <div className="flex gap-3 items-center border border-[#e2e7ee] rounded-full p-1 pr-3 text-xs bg-white">
-          <div className="flex items-center gap-2 bg-[#fecaca] px-4 py-1 rounded-full  font-medium text-red-700">
+          <div className="flex items-center gap-2 bg-[#DD52401A] px-4 py-1 rounded-full  font-medium text-red-700">
             <div className="w-[10px] h-[10px] rounded-full bg-[#ffb3b3] flex items-center justify-center">
               <div className="w-[6px] h-[6px] rounded-full bg-[#DD5240]" />
             </div>

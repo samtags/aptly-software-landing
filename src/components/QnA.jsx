@@ -3,8 +3,13 @@
 import { useState } from "react";
 import { BiMinus, BiPlus } from "react-icons/bi";
 
-export default function QnA({ question, answer, showLine = true }) {
-  const [showAnswer, setShowAnswer] = useState(false);
+export default function QnA({
+  question,
+  answer,
+  showLine = true,
+  showByDefault = false,
+}) {
+  const [showAnswer, setShowAnswer] = useState(showByDefault);
 
   return (
     <div

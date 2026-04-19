@@ -26,7 +26,9 @@ export default function Home() {
       <Testimonies />
       <Process />
       <Pricing />
-      <FAQs />
+      <div className="pt-[96px] px-5 max-w-[1100px] mx-auto ">
+        <FAQs />
+      </div>
       <Footer />
     </div>
   );

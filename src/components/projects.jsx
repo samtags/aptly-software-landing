@@ -25,18 +25,18 @@ export default function Projects() {
             link="https://elitev.vercel.app/"
           />
           <Carousel
-            title="Pasahero"
+            title="PasaHero"
             description="Mobile Development • Plus"
-            rate="120%"
-            rateDescription="Boost in leads"
+            rate="3X"
+            rateDescription="Faster Validation"
             imageUrl="/png/pasahero-thumbnail.png"
             link="https://play.google.com/store/apps/details?id=com.pasahero.passenger&hl=en&pli=1"
           />
           <Carousel
             title="TicketsPH"
             description="App Development • Pro"
-            rate="120%"
-            rateDescription="Boost in leads"
+            rate="75%"
+            rateDescription="Faster Check-ins"
             imageUrl="/png/ticketsph-thumbnail.png"
             link="https://www.ticketsph.net/en/"
           />
@@ -49,18 +49,18 @@ export default function Projects() {
             link="https://elitev.vercel.app/"
           />
           <Carousel
-            title="Pasahero"
+            title="PasaHero"
             description="Mobile Development • Plus"
-            rate="120%"
-            rateDescription="Boost in leads"
+            rate="3X"
+            rateDescription="Faster Validation"
             imageUrl="/png/pasahero-thumbnail.png"
             link="https://play.google.com/store/apps/details?id=com.pasahero.passenger&hl=en&pli=1"
           />
           <Carousel
             title="TicketsPH"
             description="App Development • Pro"
-            rate="120%"
-            rateDescription="Boost in leads"
+            rate="75%"
+            rateDescription="Faster Check-ins"
             imageUrl="/png/ticketsph-thumbnail.png"
             link="https://www.ticketsph.net/en/"
           />
