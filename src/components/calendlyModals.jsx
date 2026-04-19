@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
+import { sileo } from 'sileo'
 
 export default function CalendlyModal({ url, isOpen, onClose, onScheduled, payload }) {
 
@@ -34,8 +35,19 @@ const handleMessage = async (e) => {
     console.log('NocoDB response:', data)
 
     window.Calendly.closePopupWidget()
+
     onScheduled?.()
-    alert('Your meeting has been scheduled! We will see you soon. 🎉')
+    sileo.success({
+      title: 'Meeting Scheduled!',
+      description: 'We will see you soon. 🎉',
+      duration: 10000,
+      fill: "black",
+       styles: {
+          title: "text-white!",
+          description: "text-white/75!",
+      },
+    })
+
     onClose()
   }
 }
