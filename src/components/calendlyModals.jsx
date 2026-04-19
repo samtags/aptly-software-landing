@@ -44,7 +44,12 @@ const handleMessage = async (e) => {
     sileo.success({
       title: 'Meeting Scheduled!',
       description: 'We will see you soon. 🎉',
+      fill: "black",
       duration: 5000,
+      styles: {
+        title: "text-white!",
+        description: "text-white/75!",
+      },
     })
     onClose()
   }
