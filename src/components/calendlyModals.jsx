@@ -17,37 +17,35 @@ export default function CalendlyModal({ url, isOpen, onClose, onScheduled, paylo
 
 const handleMessage = async (e) => {
   if (e.data.event === 'calendly.event_scheduled') {
-    
-    console.log('✅ Calendly event triggered!')
-    console.log('Payload:', payload)
-    console.log('URL:', url)
 
-    const res = await fetch('/api/submit', {
+    const eventUri = e.data.payload?.event?.uri
+
+    // I-fetch ang Google Meet link mula sa Calendly API
+    const res = await fetch('/api/calendly-event', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ eventUri })
+    })
+
+    const { meetLink } = await res.json()
+    console.log('Meet link:', meetLink)
+
+    await fetch('/api/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         ...payload,
-        calendlyLink: url,
+        calendlyLink: meetLink,
       })
     })
 
-    const data = await res.json()
-    console.log('NocoDB response:', data)
-
     window.Calendly.closePopupWidget()
-
     onScheduled?.()
     sileo.success({
       title: 'Meeting Scheduled!',
       description: 'We will see you soon. 🎉',
-      duration: 10000,
-      fill: "black",
-       styles: {
-          title: "text-white!",
-          description: "text-white/75!",
-      },
+      duration: 5000,
     })
-
     onClose()
   }
 }
