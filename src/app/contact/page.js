@@ -47,7 +47,7 @@ export default function Contact() {
       return;
     }
 
-    const url = `https://calendly.com/chardcalips2/30min?name=${encodeURIComponent(payload.name)}&email=${encodeURIComponent(payload.email)}`;
+    const url = `https://calendly.com/mail-aptly/new-meeting?name=${encodeURIComponent(payload.name)}&email=${encodeURIComponent(payload.email)}`;
 
     setFormPayload(payload);
     setCalendlyUrl(url);
