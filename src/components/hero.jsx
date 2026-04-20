@@ -4,7 +4,7 @@ import { PiStarFill } from "react-icons/pi";
 
 export default function Hero() {
   return (
-    <section className="hero" data-aos="zoom-in-right">
+    <section className="hero" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1000" >
       <div className="flex justify-center items-center mt-13 lg:mt-23">
         <div className="flex gap-3 items-center border border-[#e2e7ee] rounded-full p-1 pr-3 text-xs bg-white">
           <div className="flex items-center gap-2 bg-[#DD52401A] px-4 py-1 rounded-full  font-medium text-red-700" >
@@ -25,7 +25,7 @@ export default function Hero() {
         We turn manual processes into reliable systems your business can run,
         manage, and scale every day
       </p>
-      <div className="flex flex-col md:flex-row md:justify-center px-4 gap-3">
+      <div className="flex flex-col md:flex-row md:justify-center px-4 gap-3"data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1100">
         <a
           target="__blank"
           href="https://docs.google.com/forms/d/e/1FAIpQLSfQPH2hSL8C62bfOwNAlxNJbqDXBPoDAAxvM9PRLGpNu8Mv_A/viewform?usp=preview"
@@ -46,7 +46,7 @@ export default function Hero() {
           </div>
         </a>
       </div>
-      <div className="flex justify-center mt-6 lg:mt-12">
+      <div className="flex justify-center mt-6 lg:mt-12"data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
         <div className="flex gap-2 items-center">
           <div className="flex">
             <div>
