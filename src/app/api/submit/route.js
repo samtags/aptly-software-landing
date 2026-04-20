@@ -1,13 +1,14 @@
-// app/api/submit/route.js
-
 import { NextResponse } from "next/server";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request) {
   const body = await request.json();
-
   const { name, email, company, phone, message, budget, calendlyLink } = body;
 
-  const response = await fetch(
+  // 1. Save sa NocoDB
+  await fetch(
     `${process.env.NOCODB_URL}/api/v1/db/data/noco/${process.env.NOCODB_BASE_ID}/${process.env.NOCODB_TABLE_ID}`,
     {
       method: "POST",
@@ -16,18 +17,26 @@ export async function POST(request) {
         "xc-token": process.env.NOCODB_API_TOKEN,
       },
       body: JSON.stringify({
-        name: name,
-        email: email,
-        company: company,
-        phone: phone,
-        message: message,
-        budget: budget,
-        calendlyLink: calendlyLink,
+        name,
+        email,
+        company,
+        phone,
+        message,
+        budget,
+        calendlyLink,
       }),
     },
   );
 
-  const data = await response.json();
+  try {
+    const resendRes = await resend.contacts.create({
+      email,
+      firstName: name,
+      audienceId: process.env.RESEND_AUDIENCE_ID,
+    });
+  } catch (err) {
+    console.error("Resend error:", err);
+  }
 
-  return NextResponse.json({ success: true, data });
+  return NextResponse.json({ success: true });
 }

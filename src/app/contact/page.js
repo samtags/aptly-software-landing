@@ -17,7 +17,7 @@ import {
   LuWalletCards,
 } from "react-icons/lu";
 import { FaPesoSign } from "react-icons/fa6";
-import CalendlyModal from "../../components/calendlyModals";
+import CalendlyModal from "../../components/calendlyModals.jsx";
 
 export default function Contact() {
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
@@ -47,11 +47,11 @@ export default function Contact() {
       return;
     }
 
-    const url = `https://calendly.com/chardcalips2/30min?name=${encodeURIComponent(payload.name)}&email=${encodeURIComponent(payload.email)}`;
+    const url = `https://calendly.com/mail-aptly/new-meeting?name=${encodeURIComponent(payload.name)}&email=${encodeURIComponent(payload.email)}`;
 
+    setFormPayload(payload);
     setCalendlyUrl(url);
     setIsCalendlyOpen(true);
-    setFormPayload(payload);
   }
 
   return (
