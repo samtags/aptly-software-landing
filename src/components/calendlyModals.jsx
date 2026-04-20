@@ -20,7 +20,6 @@ const handleMessage = async (e) => {
 
     const eventUri = e.data.payload?.event?.uri
 
-    // I-fetch ang Google Meet link mula sa Calendly API
     const res = await fetch('/api/calendly-event', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -28,7 +27,7 @@ const handleMessage = async (e) => {
     })
 
     const { meetLink } = await res.json()
-    console.log('Meet link:', meetLink)
+    
 
     await fetch('/api/submit', {
       method: 'POST',

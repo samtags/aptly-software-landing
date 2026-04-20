@@ -28,13 +28,15 @@ export async function POST(request) {
     },
   );
 
-  await resend.contacts.create({
-    email,
-    firstName: name,
-    audienceId: process.env.RESEND_AUDIENCE_ID,
-  });
-
-  console.log("Resend response:", resendRes);
+  try {
+    const resendRes = await resend.contacts.create({
+      email,
+      firstName: name,
+      audienceId: process.env.RESEND_AUDIENCE_ID,
+    });
+  } catch (err) {
+    console.error("Resend error:", err);
+  }
 
   return NextResponse.json({ success: true });
 }
