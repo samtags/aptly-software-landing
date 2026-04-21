@@ -28,6 +28,7 @@ const plans = [
     ],
     theme: "light",
     className: "md:grid-col-span-1 lg:col-span-2",
+    AOSDelay: 800
   },
   {
     icon: <PiTargetDuotone className="text-[30px] text-gray-600" />,
@@ -46,6 +47,7 @@ const plans = [
     ],
     theme: "light",
     className: "md:grid-col-span-1 lg:col-span-2",
+    AOSDelay: 900
   },
   {
     icon: <PiRocketLaunchDuotone className="text-[30px] text-[#ffffffcc]" />,
@@ -64,8 +66,10 @@ const plans = [
     ],
     theme: "dark",
     className: "md:col-span-full lg:col-span-2",
+    AOSDelay: 1000
   },
 ];
+
 
 export default function Pricing() {
   return (
@@ -146,12 +150,15 @@ function PriceCard({
   description,
   price,
   priceLabel,
-  features = [],
+  features,
+  AOSDelay = [],
 }) {
   const isDark = theme === "dark";
   return (
     <div
-      className={`bg-white rounded-[32px] p-7 service-card-shadow ${className} ${isDark && "bg-[#151619]! text-white!"}`}
+      className={`bg-white rounded-[32px] p-7 service-card-shadow ${className} ${isDark && "bg-[#151619]! text-white!"}`} 
+      data-aos= "fade-up"
+      data-aos-delay= {AOSDelay}
     >
       <div className="w-[44px] h-[44px] flex items-center justify-center">
         {icon}

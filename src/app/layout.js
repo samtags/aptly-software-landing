@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Manrope, Space_Grotesk } from "next/font/google";
+import AOSInit from "../components/aosInit.jsx";
 import Script from "next/script";
 import { Toaster } from "sileo";
 
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={`${manrope.variable} ${spaceGrotesk.variable} `}>
+        <AOSInit />
         {children}
         <Toaster position="top-center" />
         <Script
