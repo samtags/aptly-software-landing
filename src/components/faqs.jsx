@@ -6,7 +6,9 @@ import QnA from "./QnA";
 export default function FAQs({ cardClassName = "" }) {
   return (
     <section className="lg:grid grid-cols-12  lg:gap-12">
-      <div className="col-span-5 flex flex-col justify-between">
+      <div className="col-span-5 flex flex-col justify-between"
+           id="faqsStick"
+           className="col-span-5 flex flex-col justify-between max-w-[300px] md:max-w-[400px] shrink-0 md:sticky md:top-24 self-start">
         <div>
           <SectionTitle>FAQs</SectionTitle>
           <SectionHeader
