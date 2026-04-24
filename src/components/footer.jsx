@@ -3,6 +3,7 @@ import SectionTitle from "./sectionTitle";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { FaStarOfLife } from "react-icons/fa6";
 import { RxArrowRight } from "react-icons/rx";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -63,16 +64,16 @@ export default function Footer() {
         </div>
         <ul className="flex flex-col gap-3 text-[#fff9] font-medium text-sm col-span-3 md:col-span-1">
           <li className="text-white font-bold">Company</li>
-          <li>About Us</li>
-          <li>Pricing</li>
-          <li>Contact Us</li>
-          <li>Project</li>
+          <li><Link href="/#testimonials"></Link>About Us</li>
+          <li><Link href="/#pricing">Pricing</Link></li>
+          <li><Link href="/contact">Contact Us</Link></li>
+          <li><Link href="/#projectHistory">Projects</Link></li>
         </ul>
         <ul className="flex flex-col gap-3 text-[#fff9] font-medium text-sm col-span-3 md:col-span-2 lg:col-span-1">
           <li className="text-white font-bold">Socials</li>
-          <li>Facebook</li>
-          <li>Instagram</li>
-          <li>Linked in</li>
+          <li><Link href="https://www.facebook.com/aptly.meta" target="_blank" rel="noopener noreferrer">Facebook</Link></li>
+          <li><Link href="https://www.tiktok.com/@aptly.software?_r=1&_t=ZS-95mXQBsaVNc" target="_blank" rel="noopener noreferrer">Tiktok</Link></li>
+          <li><Link href="https://www.linkedin.com/company/aptly-software-development-services/about/" target="_blank" rel="noopener noreferrer">LinkedIn</Link></li>
         </ul>
         <div className="col-span-full md:col-span-3 lg:col-span-2">
           <div className="text-white font-bold">News Letter</div>
