@@ -1,5 +1,6 @@
 import SectionTitle from "./sectionTitle";
 import SectionHeader from "./sectionHeader";
+import { easeInOut } from "framer-motion";
 
 export default function Process() {
   return (
@@ -23,37 +24,52 @@ export default function Process() {
         <Step
           step="01"
           title="Initial Meeting"
-          description="We start by understanding your business—your goals, current challenges, and where you’re experiencing friction. This helps us identify if and how we can create real value."
+          description="We start by understanding your business—your goals, current challenges, and where you’re 
+          experiencing friction. This helps us identify if and how we can create real value."
+          AOSDelay= "800"
+          AOSDuration= "1200"
         />
         <Step
           step="02"
           title="Discovery"
-          description="We analyze your workflows, users, and requirements to define the right solution. This phase focuses on translating your pain points into a clear, actionable approach."
+          description="We analyze your workflows, users, and requirements to define the right solution. 
+          This phase focuses on translating your pain points into a clear, actionable approach."
+          AOSDelay= "1000"
+          AOSDuration= "1200"
         />
         <Step
           step="03"
           title="Agreement"
-          description="We present a structured plan outlining the scope, sprint estimate, timeline, and pricing. This ensures alignment before any development begins."
+          description="We present a structured plan outlining the scope, sprint estimate, timeline, and pricing. 
+          This ensures alignment before any development begins."
+          AOSDelay= "1200"
+          AOSDuration= "1200"
         />
         <Step
           step="04"
           title="Development Kick-off"
-          description="Once approved, we initiate the project with a defined sprint plan. Development follows a structured cycle with regular updates, feedback loops, and incremental delivery."
+          description="Once approved, we initiate the project with a defined sprint plan.
+           Development follows a structured cycle with regular updates, feedback loops, and incremental delivery."
+           AOSDelay= "1400"
+           AOSDuration= "1200"
         />
         <Step
           step="05"
           title="Deployment & Support"
           description="After release, we handle deployment and remain involved for monitoring, fixes, and continuous improvements as your product evolves."
           showLine={false}
+          AOSDelay= "1600"
+          AOSDuration= "1200"
         />
       </div>
     </section>
   );
 }
 
-function Step({ step, title, description, showLine = true }) {
+function Step({ step, title, description, showLine, AOSDelay, AOSDuration, AOSEasing = true }) {
   return (
-    <div className="flex pb-[72px]">
+    <div className="flex pb-[72px]" data-aos="fade-up" data-aos-delay= {AOSDelay} 
+                    data-aos-duration= {AOSDuration} data-aos-easing = "easeInOut">
       <div className="pt-6 relative flex flex-col gap-2 items-center ">
         <div className="shrink-0 w-[40px] h-[40px] flex items-center justify-center text-[14px] font-medium rounded-full border border-[#d9dfe8] font-inter">
           {step}
