@@ -4,9 +4,9 @@ import SectionTitle from "./sectionTitle";
 export default function Statistics() {
   return (
     <div className="pt-22">
-      <div className="text-center">
-        <SectionTitle>Impact</SectionTitle>
-        <div className="mt-1 md:mt-3 lg:mt-5" />
+      <div className="text-center" data-aos = "fade-up" data-aos-easing = "ease-in" data-aos-duration ="1000">
+        <SectionTitle>Impact </SectionTitle >
+        <div className="mt-1 md:mt-3 lg:mt-5"/>
         <SectionHeader
           main="Aptly simplifies the process,"
           sub="and delivers results."
@@ -20,12 +20,16 @@ export default function Statistics() {
               title="Platform Uptime"
               description="Modern infrastructure engineered for reliability and continuous operation."
               className="flex-1 shrink-0"
+              AOSDuration="800"
+              AOSDelay= "1000"
             />
             <Card
               highligh="10K+"
               title="Active Users Across Platforms"
               description="Applications built for real usage, not just demos or portfolios."
               className="flex-1 shrink-0"
+              AOSDuration="800"
+              AOSDelay= "1200"
             />
           </div>
           <Card
@@ -33,6 +37,8 @@ export default function Statistics() {
             title="Years Building Systems"
             description="Experience operating software in real-world environments."
             className="lg:w-1/3"
+            AOSDuration="800"
+            AOSDelay= "1400"
           />
         </div>
       </div>
@@ -40,11 +46,13 @@ export default function Statistics() {
   );
 }
 
-function Card({ highligh, title, description, className }) {
+function Card({ highligh, title, description, className, AOSDuration, AOSDelay}) {
   return (
     <div
       className={`text-left bg-[#f9fafb] rounded-[32px] p-12 px-10 ${className}`}
-    >
+      data-aos="fade-up" data-aos-easing = "ease-in" 
+      data-aos-duration= {AOSDuration} 
+      data-aos-delay={AOSDelay}  >
       <header className="text-[32px] md:text-[40px] lg:text-[48px] font-bold">
         {highligh}
       </header>
