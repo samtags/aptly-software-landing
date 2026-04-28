@@ -36,6 +36,10 @@ export default function RootLayout({ children }) {
       <body className={`${manrope.variable} ${spaceGrotesk.variable} `}>
         <AOSInit />
         {children}
+      <div className="fixed bottom-0 left-0 w-full h-24 backdrop-blur-md pointer-events-none 
+[mask-image:linear-gradient(to_top,black_40%,rgba(0,0,0,0.5)_70%,transparent)] 
+[-webkit-mask-image:linear-gradient(to_top,black_40%,rgba(0,0,0,0.5)_70%,transparent)]">
+</div>
         <Toaster position="top-center" />
         <Script
           src="https://assets.calendly.com/assets/external/widget.js"
