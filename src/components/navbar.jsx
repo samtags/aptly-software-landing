@@ -5,6 +5,7 @@ import { FaStarOfLife } from "react-icons/fa6";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { RxChevronDown } from "react-icons/rx";
 import Link from "next/link";
+import CompanyDropdown from "./CompanyDropdown.jsx";
 
 export default function Navbar() {
   return (
@@ -23,9 +24,10 @@ export default function Navbar() {
             <li className="p-2 px-4 rounded-full hover:bg-[#F1F2F414] transition-all duration-300">
               <Link href="/#testimonials">About</Link>
             </li>
-            <li className="p-2 flex gap-2 items-center px-4 rounded-full hover:bg-[#F1F2F414] transition-all duration-300">
+            <li className="p-2 flex gap-2 items-center px-4 rounded-full hover:bg-[#F1F2F414] transition-all duration-300 relative group cursor-pointer">
               Company
               <RxChevronDown />
+              <CompanyDropdown />
             </li>
             <li className="p-2 px-4 rounded-full hover:bg-[#F1F2F414] transition-all duration-300">
               <Link href="/#pricing">Pricing</Link>
