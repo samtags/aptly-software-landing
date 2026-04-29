@@ -14,13 +14,13 @@ const companyLinks = [
     icon: <BsPerson className="w-4 h-4" />,
     label: "Projects",
     description: "Learn more about us",
-    href: "/#projects",
+    href: "/#projectHistory",
   },
   {
     icon: <BsGrid className="w-4 h-4" />,
     label: "Pricing",
     description: "See our pricing",
-    href: "/#projectHistory",
+    href: "/#pricing",
   },
   {
     icon: <BsTelephone className="w-4 h-4" />,
@@ -39,8 +39,6 @@ const pageLinks = [
 
 export default function CompanyDropdown() {
   return (
-    // Invisible by default, visible on parent hover via `group-hover:`
-    // Ang parent nav item mo dapat may className="relative group"
     <div
       className="
         absolute top-full left-0 pt-3
