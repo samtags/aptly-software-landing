@@ -29,7 +29,7 @@ export default function TermsOfService() {
           <p className="md:text-[16px] font-medium">Policies</p>
           <ul className="pt-2">
             <li>
-              <Link className = "text-[#697289] md:text-[14px] font-medium flex flex-row items-center" href =""><LuNotepadText className="mr-1"/>Privacy Policy</Link>
+              <Link className = "text-[#697289] md:text-[14px] font-medium flex flex-row items-center" href ="privacy-policy"><LuNotepadText className="mr-1"/>Privacy Policy</Link>
             </li>
             <li>
               <Link className = " text-[#697289] md:text-[14px] font-medium flex flex-row items-center" href ="/terms-of-service"><LuNotepadText className="mr-1"/>Terms of Service</Link>
