@@ -31,8 +31,8 @@ const companyLinks = [
 ];
 
 const pageLinks = [
-  { label: "Privacy policy", href: "" },
-  { label: "Terms of service", href: "" },
+  { label: "Privacy policy", href: "/privacy-policy" },
+  { label: "Terms of service", href: "/terms-of-service" },
 //   { label: "Pricing", href: "/pricing", isNew: true },
   { label: "Contact us", href: "/contact" },
 ];
