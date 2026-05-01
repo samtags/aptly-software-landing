@@ -1,11 +1,33 @@
+"use client";
+
 import Companies from "./companies";
 import SectionTitle from "./sectionTitle";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { FaStarOfLife } from "react-icons/fa6";
 import { RxArrowRight } from "react-icons/rx";
 import Link from "next/link";
+import { sileo } from 'sileo'
 
 export default function Footer() {
+
+async function handleSubscribe() {
+  const email = document.getElementById('footer-email').value
+
+  if (!email) return
+
+  await fetch('/api/subscribe', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email })
+  })
+
+  document.getElementById('footer-email').value = ''
+  sileo.success({
+    title: 'Subscribed!',
+    description: 'Thank you for subscribing! 🎉',
+  })
+}
+
   return (
     <footer className="m-5 bg-[#151619] rounded-[52px] pt-[64px] pb-[40px] px-5 text-white">
       <div className="text-center">
@@ -86,11 +108,12 @@ export default function Footer() {
               @
             </span>
             <input
+              id="footer-email"
               className="text-sm font-medium grow outline-none"
               placeholder="Enter E-mail address"
             />
             <div>
-              <button className="text-white bg-[#ff5147] rounded-full px-6 py-3">
+              <button onClick={handleSubscribe} className="text-white bg-[#ff5147] rounded-full px-6 py-3">
                 <RxArrowRight strokeWidth={0.75} fontSize={20} />
               </button>
             </div>
