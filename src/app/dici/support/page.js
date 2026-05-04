@@ -2,11 +2,12 @@ import Navbar from "../../../components/navbar";
 import Footer from "../../../components/footer";
 import SectionTitle from "../../../components/sectionTitle";
 import SectionHeader from "../../../components/sectionHeader";
+import Link from "next/link";
 
 export const metadata = {
   title: "Dici Support | Aptly Software",
   description:
-    "Contact Aptly for help with the Dici app: email support, report issues, and feature requests.",
+    "Contact Aptly for help with the Dici app: email support, report issues, feature requests, and privacy policy.",
 };
 
 const SUPPORT_EMAIL = "mail.aptly@gmail.com";
@@ -124,19 +125,17 @@ export default function DiciSupportPage() {
           </ul>
         </section>
 
-        {/* Privacy — link when policy is ready for Dici
         <section>
           <h2 className="md:text-[24px] font-bold mb-4">Privacy</h2>
           <p className="text-[#697289] md:text-[16px] font-normal">
             <Link
               className="text-[#dd5240] font-medium underline underline-offset-2 hover:opacity-90"
-              href="/privacy-policy"
+              href="/dici/privacy-policy"
             >
-              Privacy Policy
+              Privacy Policy for Dici
             </Link>
           </p>
         </section>
-        */}
       </div>
 
       <Footer />
