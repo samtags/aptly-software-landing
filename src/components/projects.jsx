@@ -7,7 +7,7 @@ export default function Projects() {
       <div className="projects-fade">
         <FramerDiv
           matchMedia="(max-width: 810px)"
-          className="flex gap-4"
+          className="flex gap-4 animate-marquee marquee-wrapper"
           animate={{ x: ["0%", "-183.5%"] }}
           transition={{
             repeat: Infinity,
