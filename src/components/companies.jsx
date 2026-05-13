@@ -17,7 +17,7 @@ export default function Companies({ showHeader = true }) {
       )}
       <div className="flex justify-center">
         <div className="side-fade">
-          <div className="flex gap-8 justify-center items-center mt-4 no-wrap overflow-x-hidden text-[#9AA0B3]">
+          <div className="flex gap-8 justify-center items-center mt-4 no-wrap overflow-x-hidden text-[#9AA0B3] animate-marquee marquee-wrapper ">
             <TbBrandReactNative size={40} />
             <SiTypescript size={40} />
             <FaNodeJs size={40} />
@@ -26,8 +26,10 @@ export default function Companies({ showHeader = true }) {
             <BiLogoKubernetes size={40} />
             <DiGoogleCloudPlatform size={40} />
             <IoLogoVercel size={40} />
+            
           </div>
         </div>
+        
       </div>
     </section>
   );

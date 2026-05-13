@@ -257,3 +257,24 @@ body::before {
 /* .contact-page select {
   color: #959595;
 } */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-wrapper {
+  width: 100%;
+  position: relative;
+}
