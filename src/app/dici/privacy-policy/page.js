@@ -20,7 +20,7 @@ export default function DiciPrivacyPolicyPage() {
         <SectionTitle className="mt-4 mb-4">Dici</SectionTitle>
         <SectionHeader
           main="Privacy Policy for Dici"
-          className="max-w-[550px] mx-auto px-5 md:px-0 flex flex-col items-center"
+          className="max-w-[550px] mx-auto px-5 md:px-0 flex flex-col items-center text-center"
         />
         <p className="text-[#697289] text-[14px] md:text-[15px] font-medium mt-4 max-w-[520px] text-center mx-auto">
           Last updated: July 3, 2026.
