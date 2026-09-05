@@ -42,7 +42,7 @@ export default function TermsOfService() {
 
         <p className="md:text-[24px] font-bold mt-7">Purpose of the Policy</p>
             <p className="text-[#697289] md:text-[16px] font-normal mt-5">
-            This Privacy Policy outlines how [Agency Name] collects, uses, discloses, and protects your information when you visit our website or interact with our services. It is designed to help you understand the types of data we collect, why we collect it, and how we use and manage that information. By making our data practices transparent, we aim to foster trust and ensure compliance with applicable data protection laws.
+            This Privacy Policy outlines how Aptly Software Development Services collects, uses, discloses, and protects your information when you visit our website or interact with our services. It is designed to help you understand the types of data we collect, why we collect it, and how we use and manage that information. By making our data practices transparent, we aim to foster trust and ensure compliance with applicable data protection laws.
             </p>
 
         <p className="md:text-[24px] font-bold mt-5">Scope of Coverage</p>
@@ -101,7 +101,7 @@ export default function TermsOfService() {
 
         <p className="md:text-[24px] font-bold mt-5">In Business Transfers</p>
             <p className="text-[#697289] md:text-[16px] font-normal mt-5">
-            In the event that [Agency Name] is involved in a merger, acquisition, reorganization, or sale of assets, your information may be transferred as part of the business transaction. We will ensure that any new entity handling your data is bound by privacy obligations consistent with this policy.
+            In the event that Aptly Software Development Services is involved in a merger, acquisition, reorganization, or sale of assets, your information may be transferred as part of the business transaction. We will ensure that any new entity handling your data is bound by privacy obligations consistent with this policy.
             </p>
 
     <p className="md:text-[32px] font-bold mt-7">Data Security</p>
@@ -115,7 +115,7 @@ export default function TermsOfService() {
 
         <p className="md:text-[24px] font-bold mt-5">External Websites</p>
             <p className="text-[#697289] md:text-[16px] font-normal mt-5">
-            Our website may contain links to other websites not operated by [Agency Name]. We are not responsible for the privacy practices or the content of these external sites. We encourage users to review the privacy policies of any third-party sites they visit.
+            Our website may contain links to other websites not operated by Aptly Software Development Services. We are not responsible for the privacy practices or the content of these external sites. We encourage users to review the privacy policies of any third-party sites they visit.
             </p>
 
         <p className="md:text-[24px] font-bold mt-5">Embedded Content</p>

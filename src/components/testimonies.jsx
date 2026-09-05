@@ -6,9 +6,11 @@ export default function Testimonies() {
     <section
       id="testimonials"
       className="pt-[96px] px-5 max-w-[1100px] mx-auto"
-      data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1000"
+      data-aos="fade-up"
+      data-aos-easing="ease-in"
+      data-aos-duration="1000"
     >
-      <div className="text-center" >
+      <div className="text-center">
         <SectionTitle>Testimonials</SectionTitle>
       </div>
       <SectionHeader
@@ -30,8 +32,8 @@ export default function Testimonies() {
           company="Software Developer, Pulp"
           icon={<PlaceholderIcon />}
           className="md:col-span-full lg:col-span-1 lg:row-span-2"
-          AOSDuration= "1000"
-          AOSDelay= "1500"
+          AOSDuration="1000"
+          AOSDelay="1500"
         />
         <TestimonyCard
           rate="3X"
@@ -43,25 +45,25 @@ export default function Testimonies() {
           company="Operations Manager, PasaHero"
           icon={<PlaceholderIcon />}
           className="md:col-span-1 lg:col-span-2"
-          AOSDuration= "1000"
-          AOSDelay= "800"
+          AOSDuration="1000"
+          AOSDelay="800"
         />
         <TestimonyCard
           body='"Aptly built an offline-capable system that syncs reliably and validates tickets instantly. During live events, it performs fast and consistently without breaking under pressure"'
-          imageUrl="/png/TGbM5VpvWt795kur8Wf2anMLlhk.png"
+          imageUrl="/png/AdZ2B90nBFRBt14YlbsDACEKLni.png"
           name="Software Engineer"
           company="Tickets PH"
           theme="dark"
           className="md:col-span-1"
-          AOSDuration= "1200"
+          AOSDuration="1200"
         />
         <TestimonyCard
           body='"We needed infrastructure that could handle peak traffic during major ticket launches without downtime. Aptly engineered the platform for scale and reliability from day one. The system has remained stable during high-demand releases, giving us full confidence in our operations."'
-          imageUrl="/png/YlbsDACEKLniAdZ2B90nBFRBt14.png"
+          imageUrl="/png/AdZ2B90nBFRBt14YlbsDACEKLni.png"
           name="CTO"
           company="Tickets PH"
           className="md:col-span-full lg:col-span-1"
-          AOSDuration= "1400"
+          AOSDuration="1400"
         />
       </div>
     </section>
@@ -91,11 +93,11 @@ export function TestimonyCard({
       className={`
       bg-white rounded-[32px] p-7 service-card-shadow flex flex-col justify-between
       ${theme === "dark" && "bg-[#151619]!"} ${className}
-    `} 
-    data-aos= "fade-up"
-    data-aos-easing="ease-in"
-    data-aos-duration = {AOSDuration}
-    data-aos-delay ={AOSDelay}
+    `}
+      data-aos="fade-up"
+      data-aos-easing="ease-in"
+      data-aos-duration={AOSDuration}
+      data-aos-delay={AOSDelay}
     >
       <div>
         {(rate || rateDescription) && (

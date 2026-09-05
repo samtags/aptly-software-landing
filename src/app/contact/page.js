@@ -131,7 +131,7 @@ export default function Contact() {
                   </svg>
                   TikTok
                 </a>
-                <a
+                {/* <a
                   href="https://www.linkedin.com/company/aptly-software-development-services"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -148,7 +148,7 @@ export default function Contact() {
                     <path d="M2 12L12 2M12 2H5M12 2v7" />
                   </svg>
                   LinkedIn
-                </a>
+                </a>*/}
               </div>
             </div>
           </div>

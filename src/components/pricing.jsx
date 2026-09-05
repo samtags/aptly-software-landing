@@ -7,6 +7,7 @@ import { TestimonyCard } from "./testimonies";
 import { PiLayoutDuotone } from "react-icons/pi";
 import { PiTargetDuotone } from "react-icons/pi";
 import { PiRocketLaunchDuotone } from "react-icons/pi";
+import Link from "next/link";
 
 const plans = [
   {
@@ -28,7 +29,7 @@ const plans = [
     ],
     theme: "light",
     className: "md:grid-col-span-1 lg:col-span-2",
-    AOSDelay: 800
+    AOSDelay: 800,
   },
   {
     icon: <PiTargetDuotone className="text-[30px] text-gray-600" />,
@@ -47,7 +48,7 @@ const plans = [
     ],
     theme: "light",
     className: "md:grid-col-span-1 lg:col-span-2",
-    AOSDelay: 900
+    AOSDelay: 900,
   },
   {
     icon: <PiRocketLaunchDuotone className="text-[30px] text-[#ffffffcc]" />,
@@ -66,10 +67,9 @@ const plans = [
     ],
     theme: "dark",
     className: "md:col-span-full lg:col-span-2",
-    AOSDelay: 1000
+    AOSDelay: 1000,
   },
 ];
-
 
 export default function Pricing() {
   return (
@@ -108,12 +108,14 @@ export default function Pricing() {
             </p>
           </div>
           <div>
-            <button className="flex justify-center items-center gap-3 bg-white text-sm font-medium pl-4 py-1 pr-1 rounded-full border border-[#d2dae4] text-[#323745] mt-5">
-              Book a call
-              <div className="bg-[#f3f5f6] p-2 rounded-full">
-                <HiArrowUpRight strokeWidth={1} fontSize={12} />
-              </div>
-            </button>
+            <Link href="/contact" target="_blank">
+              <button className="cursor-pointer flex justify-center items-center gap-3 bg-white text-sm font-medium pl-4 py-1 pr-1 rounded-full border border-[#d2dae4] text-[#323745] mt-5">
+                Book a call
+                <div className="bg-[#f3f5f6] p-2 rounded-full">
+                  <HiArrowUpRight strokeWidth={1} fontSize={12} />
+                </div>
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -121,9 +123,9 @@ export default function Pricing() {
           className="md:col-span-1 lg:col-span-3"
           rateDescription="Retainership starts at ₱9,999 / month"
           rateDescriptionClassName="text-[#1b1e21]!"
-          body={`"Best for ongoing support, maintenance, and small continuous improvements—ideal after 
+          body={`"Best for ongoing support, maintenance, and small continuous improvements—ideal after
             launch to keep your system stable, updated, and evolving with your needs."`}
-          imageUrl="/png/YlbsDACEKLniAdZ2B90nBFRBt14.png"
+          imageUrl="/png/Bt14DACEKLniAdZ2B90nBFRYlbs.png"
           name="Elite-V"
           hideQouteIcon
         />
@@ -156,9 +158,9 @@ function PriceCard({
   const isDark = theme === "dark";
   return (
     <div
-      className={`bg-white rounded-[32px] p-7 service-card-shadow ${className} ${isDark && "bg-[#151619]! text-white!"}`} 
-      data-aos= "fade-up"
-      data-aos-delay= {AOSDelay}
+      className={`bg-white rounded-[32px] p-7 service-card-shadow ${className} ${isDark && "bg-[#151619]! text-white!"}`}
+      data-aos="fade-up"
+      data-aos-delay={AOSDelay}
     >
       <div className="w-[44px] h-[44px] flex items-center justify-center">
         {icon}
@@ -193,11 +195,13 @@ function PriceCard({
           </Feature>
         ))}
       </ul>
-      <button
-        className={`w-full rounded-full bg-[#151619] text-white py-4 text-sm font-medium ${isDark && "bg-[#fff]! text-[#151619]!"}`}
-      >
-        Get Started Now
-      </button>
+      <Link href="/contact" target="_blank">
+        <button
+          className={`w-full rounded-full bg-[#151619] text-white py-4 text-sm font-medium ${isDark && "bg-[#fff]! text-[#151619]!"}`}
+        >
+          Get Started Now
+        </button>
+      </Link>
     </div>
   );
 }

@@ -20,17 +20,18 @@ export default function Works() {
 
       <div className="flex flex-col md:flex-row md:justify-between md:items-center">
         <p className="text-[#697289] text-[14px] md:text-[15px] font-medium mt-4 max-w-[450px]">
-          See how we've helped clients turn ambitious ideas into impactful digital products.
+          See how we've helped clients turn ambitious ideas into impactful
+          digital products.
         </p>
 
-        <div className="flex">
+        {/* <div className="flex">
           <button className="flex justify-center items-center gap-3 bg-white text-sm font-medium pl-4 py-2 pr-2 rounded-full border border-[#d2dae4] text-[#323745] mt-5">
             View all projects
             <div className="bg-[#f3f5f6] p-2 rounded-full">
               <HiArrowUpRight strokeWidth={1} fontSize={12} />
             </div>
           </button>
-        </div>
+        </div>*/}
       </div>
 
       <div className="flex flex-col pt-[40px] gap-[20px] md:grid md:grid-cols-2">
@@ -86,8 +87,12 @@ function Project({ title, tags, imageUrl, redirectUrl }) {
       onMouseLeave={() => setHovered(false)}
       onMouseMove={handleMouseMove}
     >
-      <a href={redirectUrl} target="_blank" rel="noopener noreferrer" className="block">
-
+      <a
+        href={redirectUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
         {/* IMAGE */}
         <div className="relative rounded-[18px] bg-gray-100 h-[320px] overflow-hidden">
           <img
@@ -95,24 +100,6 @@ function Project({ title, tags, imageUrl, redirectUrl }) {
             alt={`Project ${title}.`}
             className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
           />
-
-          {/* FOLLOW CURSOR BUTTON */}
-          <div
-            className={`
-              absolute pointer-events-none
-              transition-opacity duration-300
-              ${hovered ? "opacity-100" : "opacity-0"}
-            `}
-            style={{
-              left: `${position.x}px`,
-              top: `${position.y}px`,
-              transform: "translate(-50%, -50%)",
-            }}
-          >
-            <button className="bg-[#6b6b6b]/90 backdrop-blur-md text-white px-5 py-3 rounded-full text-sm font-medium whitespace-nowrap">
-              View Project
-            </button>
-          </div>
         </div>
 
         {/* TEXT AREA */}
@@ -131,7 +118,6 @@ function Project({ title, tags, imageUrl, redirectUrl }) {
             ))}
           </div>
         </div>
-
       </a>
     </div>
   );

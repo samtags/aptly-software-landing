@@ -40,7 +40,7 @@ export default function TermsOfService() {
 
       <p className="md:text-[32px] font-bold">Introduction</p>
         <p className="md:text-[24px] font-bold mt-7">Purpose of the Terms</p>
-              <p className=" text-[#697289] md:text-[16px] font-normal mt-5">These Terms of Service govern your access to and use of Agency Name's website and services.
+              <p className=" text-[#697289] md:text-[16px] font-normal mt-5">These Terms of Service govern your access to and use of Aptly Software Development Services's website and services.
              They are designed to provide clarity on the rights and obligations of both parties involved.
               By clearly outlining expectations, we aim to ensure a smooth and transparent experience for all users.</p>
               <p className=" text-[#697289] md:text-[16px] font-normal mt-5">By accessing or using our website, you agree to comply with these Terms, acknowledging that you have read, understood, 
@@ -54,7 +54,7 @@ export default function TermsOfService() {
 
         <p className="md:text-[32px] font-bold mt-7">Definitions</p>
           <p className="md:text-[24px] font-bold mt-7">Key Terms and Definitions</p>
-              <p className=" text-[#697289] md:text-[16px] font-normal mt-5">In these Terms, "we," "us," and "our" refer to Bravio. 
+              <p className=" text-[#697289] md:text-[16px] font-normal mt-5">In these Terms, "we," "us," and "our" refer to Aptly. 
                 "You" and "user" refer to any person accessing or using our website and services. "Content" includes text, images,
                  graphics, and any other materials provided through our services.</p>
 
@@ -116,7 +116,7 @@ export default function TermsOfService() {
                   on our website.</p>
           <p className="md:text-[24px] font-bold mt-5">Limitation of Liability</p>
               <p className=" text-[#697289] md:text-[16px] font-normal mt-5">To the fullest extent permitted by law,
-                 Bravio is not liable for any direct, indirect, incidental, or consequential damages resulting from your use
+                 Aptly is not liable for any direct, indirect, incidental, or consequential damages resulting from your use
                   of our services, including loss of profits, data, or business opportunities.<br/><br/>We may provide links to 
                   third-party websites or integrate with third-party services. We are not responsible for the content, privacy 
                   practices, or performance of these external platforms.</p>

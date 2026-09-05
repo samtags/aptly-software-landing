@@ -6,27 +6,26 @@ import { HiArrowUpRight } from "react-icons/hi2";
 import { FaStarOfLife } from "react-icons/fa6";
 import { RxArrowRight } from "react-icons/rx";
 import Link from "next/link";
-import { sileo } from 'sileo'
+import { sileo } from "sileo";
 
 export default function Footer() {
+  async function handleSubscribe() {
+    const email = document.getElementById("footer-email").value;
 
-async function handleSubscribe() {
-  const email = document.getElementById('footer-email').value
+    if (!email) return;
 
-  if (!email) return
+    await fetch("/api/subscribe", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email }),
+    });
 
-  await fetch('/api/subscribe', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email })
-  })
-
-  document.getElementById('footer-email').value = ''
-  sileo.success({
-    title: 'Subscribed!',
-    description: 'Thank you for subscribing! 🎉',
-  })
-}
+    document.getElementById("footer-email").value = "";
+    sileo.success({
+      title: "Subscribed!",
+      description: "Thank you for subscribing! 🎉",
+    });
+  }
 
   return (
     <footer className="m-5 bg-[#151619] rounded-[52px] pt-[64px] pb-[40px] px-5 text-white">
@@ -44,12 +43,14 @@ async function handleSubscribe() {
         <Companies />
       </div>
       <div className="flex justify-center pb-8">
-        <button className="flex justify-center items-center gap-3 bg-white text-sm font-medium px-2 py-3 pl-6 rounded-full border border-[#d2dae4] text-[#323745]">
-          Schedule a call
-          <div className="bg-[#f3f5f6] p-2 rounded-full">
-            <HiArrowUpRight strokeWidth={1} fontSize={12} />
-          </div>
-        </button>
+        <Link href="/contact" target="_blank">
+          <button className="cursor-pointer flex justify-center items-center gap-3 bg-white text-sm font-medium px-2 py-3 pl-6 rounded-full border border-[#d2dae4] text-[#323745]">
+            Schedule a call
+            <div className="bg-[#f3f5f6] p-2 rounded-full">
+              <HiArrowUpRight strokeWidth={1} fontSize={12} />
+            </div>
+          </button>
+        </Link>
       </div>
       <svg
         className="footer-wordmark-svg mx-auto max-w-[1100px]"
@@ -86,16 +87,40 @@ async function handleSubscribe() {
         </div>
         <ul className="flex flex-col gap-3 text-[#fff9] font-medium text-sm col-span-3 md:col-span-1">
           <li className="text-white font-bold">Company</li>
-          <li><Link href="/#testimonials"></Link>About Us</li>
-          <li><Link href="/#pricing">Pricing</Link></li>
-          <li><Link href="/contact">Contact Us</Link></li>
-          <li><Link href="/#projectHistory">Projects</Link></li>
+          <li>
+            <Link href="/#testimonials"></Link>About Us
+          </li>
+          <li>
+            <Link href="/#pricing">Pricing</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact Us</Link>
+          </li>
+          <li>
+            <Link href="/#projectHistory">Projects</Link>
+          </li>
         </ul>
         <ul className="flex flex-col gap-3 text-[#fff9] font-medium text-sm col-span-3 md:col-span-2 lg:col-span-1">
           <li className="text-white font-bold">Socials</li>
-          <li><Link href="https://www.facebook.com/aptly.meta" target="_blank" rel="noopener noreferrer">Facebook</Link></li>
-          <li><Link href="https://www.tiktok.com/@aptly.software?_r=1&_t=ZS-95mXQBsaVNc" target="_blank" rel="noopener noreferrer">Tiktok</Link></li>
-          <li><Link href="https://www.linkedin.com/company/aptly-software-development-services/about/" target="_blank" rel="noopener noreferrer">LinkedIn</Link></li>
+          <li>
+            <Link
+              href="https://www.facebook.com/aptly.meta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.tiktok.com/@aptly.software?_r=1&_t=ZS-95mXQBsaVNc"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Tiktok
+            </Link>
+          </li>
+          {/* <li><Link href="https://www.linkedin.com/company/aptly-software-development-services/about/" target="_blank" rel="noopener noreferrer">LinkedIn</Link></li>*/}
         </ul>
         <div className="col-span-full md:col-span-3 lg:col-span-2">
           <div className="text-white font-bold">News Letter</div>
@@ -113,7 +138,10 @@ async function handleSubscribe() {
               placeholder="Enter E-mail address"
             />
             <div>
-              <button onClick={handleSubscribe} className="text-white bg-[#ff5147] rounded-full px-6 py-3">
+              <button
+                onClick={handleSubscribe}
+                className="text-white bg-[#ff5147] rounded-full px-6 py-3"
+              >
                 <RxArrowRight strokeWidth={0.75} fontSize={20} />
               </button>
             </div>
@@ -123,8 +151,12 @@ async function handleSubscribe() {
       <div className="text-xs text-[#fff9] mt-4 font-medium flex justify-between mt-8 mx-auto max-w-[1100px]">
         <span>© 2026 Aptly Software</span>
         <ul className="flex gap-1">
-          <li>Privacy Policy</li>
-          <li>Terms of Service</li>
+          <li>
+            <Link href="/terms-of-service">Privacy Policy</Link>
+          </li>
+          <li>
+            <Link href="/privacy-policy">Terms of Service</Link>
+          </li>
         </ul>
       </div>
     </footer>

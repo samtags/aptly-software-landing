@@ -1,16 +1,23 @@
 import { IoCallOutline } from "react-icons/io5";
 import { HiArrowUpRight } from "react-icons/hi2";
-import { PiStarFill } from "react-icons/pi";
+import Link from "next/link";
+// import { PiStarFill } from "react-icons/pi";
+//
 
 export default function Hero() {
   return (
-    <section className="hero" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1000" >
+    <section
+      className="hero"
+      data-aos="fade-up"
+      data-aos-easing="ease-in"
+      data-aos-duration="1000"
+    >
       <div className="flex justify-center items-center mt-13 lg:mt-23">
         <div className="flex gap-3 items-center border border-[#e2e7ee] rounded-full p-1 pr-3 text-xs bg-white">
-          <div className="flex items-center gap-2 bg-[#DD52401A] px-4 py-1 rounded-full  font-medium text-red-700" >
+          <div className="flex items-center gap-2 bg-[#DD52401A] px-4 py-1 rounded-full  font-medium text-red-700">
             <div className="w-[10px] h-[10px] rounded-full bg-[#ffb3b3] flex items-center justify-center">
               <div className="w-[6px] h-[6px] rounded-full bg-[#DD5240]" />
-            </div >
+            </div>
             Available
           </div>{" "}
           <span className="font-medium ">Get Started</span>{" "}
@@ -25,17 +32,22 @@ export default function Hero() {
         We turn manual processes into reliable systems your business can run,
         manage, and scale every day
       </p>
-      <div className="flex flex-col md:flex-row md:justify-center px-4 gap-3"data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1100">
-        <a
-          target="__blank"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfQPH2hSL8C62bfOwNAlxNJbqDXBPoDAAxvM9PRLGpNu8Mv_A/viewform?usp=preview"
+      <div
+        className="flex flex-col md:flex-row md:justify-center px-4 gap-3"
+        data-aos="fade-up"
+        data-aos-easing="ease-in"
+        data-aos-duration="1100"
+      >
+        <Link
+          target="_blank"
+          href="/contact"
           className="flex justify-center items-center gap-3 bg-[#151619] text-white text-sm font-medium p-4 md:pr-8 py-[10px] rounded-full"
         >
           <div className="bg-[#ffffff21] p-2 rounded-full">
             <IoCallOutline width={2} fontSize={14} />
           </div>
           Book an intro call
-        </a>
+        </Link>
         <a
           href="/#pricing"
           className="flex justify-center items-center gap-3 bg-white text-sm font-medium p-4 py-[10px] md:pl-8 rounded-full border border-[#d2dae4] text-[#323745]"
@@ -46,7 +58,7 @@ export default function Hero() {
           </div>
         </a>
       </div>
-      <div className="flex justify-center mt-6 lg:mt-12"data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
+      {/* <div className="flex justify-center mt-6 lg:mt-12"data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
         <div className="flex gap-2 items-center">
           <div className="flex">
             <div>
@@ -73,7 +85,7 @@ export default function Hero() {
             <div className="text-xs font-medium">1.5K app reviews</div>
           </div>
         </div>
-      </div>
+      </div>*/}
     </section>
   );
 }
